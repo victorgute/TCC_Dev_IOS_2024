@@ -1,185 +1,153 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu-principal {
+  background-color: black;
+  padding: 10px 20px;
+}
+
+.show-menu>div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.logomarca img {
+  width: 6rem;
+  display: flex;
+}
+
+.navbar img.tresbarras {
+  display: none;
+  cursor: pointer;
+}
+
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar ul li {
+  display: inline;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.navbar a:hover {
+  color: rgb(95, 135, 245);
+}
+
+.navbar .logomarca {
+  display: flex;
+  align-items: center;
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+}
+
+.item :hover {
+  transform: translateY(-5px);
+  transition: all 0.2s;
+}
+
+.button-tres {
+  display: none;
+}
+
+header {
+  background-image: radial-gradient(#fff, #c7c7c7);
+}
+
+.header-button-size {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  padding: 1rem;
+}
+.header-button-size-left {
+  height: 100%;
+  flex-basis: 50%;
+}
+
+.header-button-size-left h2 {
+  font-size: 3.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.header-button-size-left p {
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.header-button-size-left button {
+  background-color: rgb(95, 135, 245);
+  border: none;
+  cursor: pointer;
+  padding: 0.8rem 3.8rem;
+  border-radius: 9999px;
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.5s;
+}
+
+.header-button-size-left button:hover {
+  background-color: #004c94;
+}
+
+.header-button-size-right {
+  display: flex;
+  flex-basis: 50%;
+  align-items: center;
+}
+
+.header-button-size-right img {
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .logomarca {
+    font-size: 1.2rem;
   }
-  
-  .menu-principal {
-    background-color: black;
-    padding: 10px 20px;
-  }
-  
-  .navbar {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .navbar img.tresbarras {
-    display: none;
-    cursor: pointer;
-  }
-  
-  .navbar ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 20px;
-  }
-  
-  .navbar ul li {
-    display: inline;
-  }
-  
-  .navbar a {
-    text-decoration: none;
-    color: white;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  }
-  .navbar a:hover {
-    color: rgb(95, 135, 245);
-  }
-  
-  .navbar .logomarca {
-    display: flex;
-    align-items: center;
-  }
-  
-  .navbar .search {
-    display: flex;
-    align-items: center;
-  }
-  
-  
-  .item :hover {
-    transform: translateY(-5px);
-    transition: all 0.2s;
-  }
-  
-  .nav-icons img {
-    width: 80px;
-  }
-  
-  .button-tres {
-    display: none;
-  }
-  
-  header{
-      background-image: radial-gradient(#fff, #c7c7c7);
-  }
-  
+
   .header-button-size {
-    display: flex;
-    align-items: center;
-    justify-self: center;
-    padding: 1rem;
-  }
-  .header-button-size-left {
-    height: 100%;
-    flex-basis: 50%;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 4rem;
   }
   
-  .header-button-size-left h2 {
-    font-size: 3.2rem;
-    margin-bottom: 1.5rem;
+  .navbar ul li{
+    position: absolute;
+    background-color: rgb(156, 29, 29);
+    width: 100%;
+    top: 62px;
+    display: none;
   }
-  
-  .header-button-size-left p {
-    line-height: 1.5rem;
-    margin-bottom: 1.5rem;
+
+  .navbar ul li{
+    display: block;
   }
-  
-  .header-button-size-left button {
-    background-color: rgb(95, 135, 245);
-    border: none;
-    cursor: pointer;
-    padding: 0.8rem 3.8rem;
-    border-radius: 9999px;
-    color: white;
-    font-weight: 500;
-    font-size: 1rem;
-    transition: all 0.5s;
+
+  .navbar ul li{
+    flex-direction: column;
   }
-  
-  .header-button-size-left button:hover{
-    background-color: #004c94;
+
+  .navbar ul li{
+    text-align: center;
+    padding: 0.8rem;
   }
-  
-  .header-button-size-right {
-    display: flex;
-    flex-basis: 50%;
-    align-items: center;
-  }
-  
-  .header-button-size-right img {
-    width: 125%;
-  }
-  
-  @media (max-width: 768px) {
-    .navbar img.tresbarras {
-      display: block;
-    }
-  
-    .navbar ul {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-      background-color: #f8f9fa;
-      position: absolute;
-      top: 60px;
-      left: 0;
-    }
-  
-    .navbar ul li {
-      display: block;
-      text-align: center;
-      padding: 10px 0;
-      border-top: 1px solid #ddd;
-    }
-  
-    .navbar ul li:first-child {
-      border-top: none;
-    }
-  
-    .navbar ul.active {
-      display: flex;
-    }
-  
-    .navbar .search {
-      width: 100%;
-      justify-content: center;
-      margin-top: 10px;
-    }
-  
-    .navbar .carrinho {
-      display: none;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .navbar .search input {
-      width: 80%;
-    }
-  }
-  
-  @media screen and (max-width: 768px) {
-    .logomarca {
-      padding-right: 0; /* Remover o espaçamento à direita para a logomarca em telas menores */
-      padding-left: 20px; /* Adicionar espaçamento à esquerda para a logomarca em telas menores */
-    }
-  
-    .item {
-      display: none; /* Esconder os itens do menu principal em telas menores */
-    }
-  
-    .search {
-      padding-right: 20px; /* Reduzir o espaçamento à direita para o formulário de pesquisa em telas menores */
-    }
-  
-    .tresbarras {
-      display: block; /* Exibir o ícone de menu em telas menores */
-    }
-  }
+}
