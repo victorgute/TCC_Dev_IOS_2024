@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: rgb(83, 83, 83);
+}
+
+.Termos p{
+    z-index: 99;
+    margin-left: 20px;
+    color: white;
+}
+.Termos h1{
+    font-size: 500%;
+    z-index: 99;
+    margin-left: 20px;
+    color: rgb(74, 144, 226);
+}
+.Termos h5{
+    font-size: 200%;
+    z-index: 99;
+    margin-left: 20px;
+    color: rgb(74, 144, 226);
+}
+
+
+footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.atendimento {
+    background-color: white; /* Cor de fundo diferente */
+    padding: 30px;
+   
+    display: flex; /* Utilizando flexbox */
+    justify-content: flex-start; /* Alinhando os itens à esquerda */
+    align-items: center; /* Centralizando verticalmente */
+
+}
+
+.atendimento p {
+    margin: 0; /* Removendo margem padrão dos parágrafos */
+}
+
+.atendimento p:not(:last-child) {
+    margin-right: 33.3%; /* Adicionando espaçamento entre os parágrafos */
+}
+
+
+.rodape-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    background-color: rgb(0, 0, 0); /* Cor de fundo das listas */
+    padding: 20px;
+    margin-top: -20px; /* Reduzir espaçamento entre a área de atendimento e as listas */
+}
+
+.grid-item {
+    list-style-type: none;
+}
+
+.grid-item:nth-child(1) {
+    margin-right: auto;
+}
+
+.grid-item:nth-child(2) {
+    margin: 0 auto;
+}
+
+.grid-item:nth-child(3) {
+    margin-left: auto;
+}
+
+.grid-item h4 {
+    margin-bottom: 10px;
+}
+
+.grid-item ul {
+    padding: 0;
+}
+
+.grid-item ul li {
+    margin-bottom: 5px;
+    list-style-type: none; /* Remover bolinhas dos itens da lista */
+}
+
+.grid-item ul li a {
+    text-decoration: none; /* Remover sublinhado padrão dos links */
+    color: white; /* Definir cor do texto dos links */
+}
+.grid-item ul li {
+    color: rgb(74, 144, 226);;
+}
+
+.grid-item h4 {
+color: rgb(74, 144, 226);
+}
+
+
+footer .grid-item a{
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: rem;
+    border: none;
+    border-radius: 7px;
+    background: rgb(74, 144, 226);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    transition: all 0.15s ease-in-out;
+}
+
+footer .grid-item a:hover {
+    background: #1900ff;
+}
