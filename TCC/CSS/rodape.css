@@ -33,6 +33,10 @@ footer {
     width: 100%;
 }
 
+.footer1 :hover{
+    transition: all 0.8s;
+}
+
 .atendimento {
     background-color: white; /* Cor de fundo diferente */
     padding: 30px;
@@ -48,7 +52,7 @@ footer {
 }
 
 .atendimento p:not(:last-child) {
-    margin-right: 33.3%; /* Adicionando espaçamento entre os parágrafos */
+    margin-right: 25%; /* Adicionando espaçamento entre os parágrafos */
 }
 
 
