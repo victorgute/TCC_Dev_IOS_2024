@@ -52,7 +52,7 @@ footer {
 }
 
 .atendimento p:not(:last-child) {
-    margin-right: 25%; /* Adicionando espaçamento entre os parágrafos */
+    margin-right: 20%; /* Adicionando espaçamento entre os parágrafos */
 }
 
 
