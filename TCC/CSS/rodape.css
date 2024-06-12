@@ -40,7 +40,6 @@ footer {
 .atendimento {
     background-color: white; /* Cor de fundo diferente */
     padding: 30px;
-   
     display: flex; /* Utilizando flexbox */
     justify-content: flex-start; /* Alinhando os itens à esquerda */
     align-items: center; /* Centralizando verticalmente */
