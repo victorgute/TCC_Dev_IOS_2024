@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minha Loja - Início</title>
+    <link rel="stylesheet" href="/MeusProjetos/site/Css/estilo.css" />
+  </head>
+
+  <body>
+    
+
+    <main>
+      <div id="main">
+        <button class="openbtn" onclick="abrirSidebar()">☰</button>
+      </div>
+
+      <!-- Sidebar -->
+      <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="fecharSidebar()"
+          >×</a
+        >
+        <a href="#">Categoria 1</a>
+        <a href="#">Categoria 2</a>
+        <a href="#">Categoria 3</a>
+        <a href="#">Categoria 4</a>
+      </div>
+
+      <div class="carrossel">
+        <div class="slides">
+          <div class="slide">
+            <img src="/MeusProjetos/site/imgs/carrossel1.png" alt="Slide 1" />
+          </div>
+          <div class="slide">
+            <img src="/MeusProjetos/site/imgs/carrossel2.png" alt="Slide 2" />
+          </div>
+          <div class="slide">
+            <img src="/MeusProjetos/site/imgs/carrossel3.png" alt="Slide 3" />
+          </div>
+        </div>
+        <button class="prev" onclick="mudarSlide(-1)">&#10094;</button>
+        <button class="next" onclick="mudarSlide(1)">&#10095;</button>
+      </div>
+
+      <h2>Produtos</h2>
+      <div class="produtos">
+        <div class="produto">
+          <img src="img/produto1.jpg" alt="Produto 1" />
+          <h3>Produto 1</h3>
+          <p>R$ 100,00</p>
+          <a href="produto.html?id=1" class="botao">Ver detalhes</a>
+        </div>
+        <!-- Adicione mais produtos conforme necessário -->
+      </div>
+
+      <!-- Botão flutuante -->
+      <button onclick="topFunction()" id="topBtn" class="topBtn">↑ Topo</button>
+    </main>
+
+    <footer>
+      <p>© 2024 Minha Loja. Todos os direitos reservados.</p>
+    </footer>
+    <script src="/MeusProjetos/site/JS/script.js"></script>
+  </body>
+</html>
