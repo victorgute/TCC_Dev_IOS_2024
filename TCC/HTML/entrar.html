@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS/entrar.css" />
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="crossorigin="anonymous"referrerpolicy="no-referrer"/>
+    <title>Entrar</title>
+  </head>
+  <body>
+
+    <header>
+      <nav class="icon-logo">
+        <a href="/HTML/index.html"
+          ><img src="/IMG/logomarca.png" alt="logo" width="100px"
+        /></a>
+      </nav>
+    </header>
+
+    <main id="container">
+      <form id="login-form">
+        <div id="form-header">
+          <h1>Login</h1>
+          <i id="mode-icon" class="fa-solid fa-moon"></i>
+        </div>
+
+        <div id="social-media">
+            <a href="#">
+                <img src="/IMG/Facebook-logo.png" alt="Facebook">
+            </a>
+            <a href="#">
+                <img src="/IMG/Google1.png" alt="Facebook">
+            </a>
+            <a href="#">
+                <img src="/IMG/Github-logo.png" alt="Facebook">
+            </a>
+
+            <div id="input">
+                <div class="input-box">
+                    <label for="name">
+                        Nome
+                        <div class="input-field">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" id="name" name="name">
+                        </div>
+                    </label>
+                </div>
+
+                <div class="input-box">
+                    <label for="email">
+                        E-mail
+                        <div class="input-field">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" id="name" name="email">
+                        </div>
+                    </label>
+                </div>
+
+                <div class="input-box">
+                    <label for="Password">
+                        Senha
+                        <div class="input-field">
+                            <i class="fa-solid fa-key"></i>
+                            <input type="text" id="Password" name="Password">
+                        </div>
+                    </label>
+
+                    <div id="forgot_password">
+                        <a href="#">
+                            Esqueceu a senha?
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button type="submit" id="login_button">
+            Entrar
+        </button>
+      </form>
+    </main>
+
+
+  </body>
+</html>
