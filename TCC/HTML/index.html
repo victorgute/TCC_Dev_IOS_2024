@@ -1,163 +1,157 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon" />
-      <title>NanoNexus</title>
-      <link rel="stylesheet" href="/TCC/CSS/styles.css" />
-      <link rel="stylesheet" href="/TCC/CSS/rodape.css">
-      <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-        crossorigin="anonymous"
-      />
-    </head>
-    <body>
-          <div class="menu-principal">
-            <div class="show menu">
-              <nav class="navbar">
-                <a href="/HTML/index.html" class="logomarca"
-                  ><img src="/img/logomarca.png" alt="logomarca"
-                /></a>
-                <ul class="item">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="/HTML/entrar.html">Entrar</a></li>
-                  <li><a href="#">Cadastro</a></li>
-                  <li><a href="#">Ajuda</a></li>
-                  <li><a href="#">Favoritos</a></li>
-                </ul>
-                <div class="nav-icons">
-                  <a href="#" class="carrinho"
-                    ><img src="/img/carrinho.png" alt="carrinho" width="50px"
-                  /></a>
-                  <img
-                    src="/img/tresbarras.png"
-                    alt="tres barras"
-                    class="button-tres"
-                  />
-                </div>
-              </nav>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/TCC//img/logo.png" type="image/x-icon" />
+    <title>NanoNexus</title>
+    <link rel="stylesheet" href="/TCC/CSS/styles.css" />
+    <link rel="stylesheet" href="/TCC/CSS/rodape.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="menu-principal">
+      <div class="show menu">
+        <nav class="navbar">
+          <a href="/TCC//HTML/index.html" class="logomarca"
+            ><img src="/TCC//img/logomarca.png" alt="logomarca"
+          /></a>
+          <ul class="item">
+            img
+            <li><a href="#">Home</a></li>
+            <li><a href="/TCC//HTML/entrar.html">Entrar</a></li>
+            <li><a href="#">Cadastro</a></li>
+            <li><a href="#">Ajuda</a></li>
+            <li><a href="#">Favoritos</a></li>
+          </ul>
+          <div class="nav-icons">
+            <a href="#" class="carrinho"
+              ><img src="/TCC//img/carrinho.png" alt="carrinho" width="50px"
+            /></a>
+            <img
+              src="/TCC//img/tresbarras.png"
+              alt="tres barras"
+              class="button-tres"
+            />
           </div>
-      <header>
-        <div class="header-inner-content">
-          <div class="header-button-size">
-            <div class="header-button-size-left">
-              <h2>Seu melhor destino para compras inteligentes.</h2>
-              <p>
-                Encontre produtos de alta qualidade, preços imbatíveis e uma
-                experiência de compra eficiente, tudo na ponta dos seus dedos.
-              </p>
-              <button>Ver Agora &#8594;</button>
-            </div>
-            <div class="header-button-size-right">
-              <img src="/img/gabinete3.png" alt="Gabinete" />
-            </div>
+        </nav>
+      </div>
+    </div>
+    <header>
+      <div class="header-inner-content">
+        <div class="header-button-size">
+          <div class="header-button-size-left">
+            <h2>Seu melhor destino para compras inteligentes.</h2>
+            <p>
+              Encontre produtos de alta qualidade, preços imbatíveis e uma
+              experiência de compra eficiente, tudo na ponta dos seus dedos.
+            </p>
+            <button>Ver Agora &#8594;</button>
+          </div>
+          <div class="header-button-size-right">
+            <img src="/TCC//img/gabinete3.png" alt="Gabinete" />
           </div>
         </div>
-      </header>
-      <main>
-        <div id="main">
-          <button class="openbtn" onclick="abrirSidebar()">☰</button>
-        </div>
-  
-        <!-- Sidebar -->
-        <div id="sidebar" class="sidebar">
-          <a href="javascript:void(0)" class="closebtn" onclick="fecharSidebar()"
-            >×</a
-          >
-          <a href="#">Categoria 1</a>
-          <a href="#">Categoria 2</a>
-          <a href="#">Categoria 3</a>
-          <a href="#">Categoria 4</a>
-        </div>
+      </div>
+    </header>
+    <main>
+      <div id="main">
+        <button class="openbtn" onclick="abrirSidebar()">☰</button>
+      </div>
 
-        <div class="carrossel">
-          <div class="slides">
-            <div class="slide">
-              <img src="/TCC/img/carrossel1.png" alt="Slide 1" />
-            </div>
-            <div class="slide">
-              <img src="/TCC/img/carrossel2.png" alt="Slide 2" />
-            </div>
-            <div class="slide">
-              <img src="/TCC/img/carrossel3.png" alt="Slide 3" />
-            </div>
-          </div>
-          <button class="prev" onclick="mudarSlide(-1)">&#10094;</button>
-          <button class="next" onclick="mudarSlide(1)">&#10095;</button>
-        </div>
-        <h2>Produtos</h2>
-        <div class="produtos">
-          <div class="produto 1">
-            <img src="img/produto1.jpg" alt="Produto 1" />
-            <h3>Produto 1</h3>
-            <p>R$ 100,00</p>
-            <a href="produto.html?id=1" class="botao">Ver detalhes</a>
-          </div>
-          <!-- Adicione mais produtos conforme necessário -->
-        </div>
+      <!-- Sidebar -->
+      <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="fecharSidebar()"
+          >×</a
+        >
+        <a href="#">Categoria 1</a>
+        <a href="#">Categoria 2</a>
+        <a href="#">Categoria 3</a>
+        <a href="#">Categoria 4</a>
+      </div>
 
-        
-          <!-- Botão flutuante -->
+      <div class="carrossel">
+        <div class="slides">
+          <div class="slide">
+            <img src="/TCC/img/carrossel1.png" alt="Slide 1" />
+          </div>
+          <div class="slide">
+            <img src="/TCC/img/carrossel2.png" alt="Slide 2" />
+          </div>
+          <div class="slide">
+            <img src="/TCC/img/carrossel3.png" alt="Slide 3" />
+          </div>
+        </div>
+        <button class="prev" onclick="mudarSlide(-1)">&#10094;</button>
+        <button class="next" onclick="mudarSlide(1)">&#10095;</button>
+      </div>
+      <h2>Produtos</h2>
+      <div class="produtos">
+        <div class="produto 1">
+          <img src="/TCC/img/produto1.jpg" alt="Produto 1" />
+          <h3>Produto 1</h3>
+          <p>R$ 100,00</p>
+          <a href="produto.html?id=1" class="botao">Ver detalhes</a>
+        </div>
+        <!-- Adicione mais produtos conforme necessário -->
+      </div>
+
+      <!-- Botão flutuante -->
       <button onclick="topFunction()" id="topBtn" class="topBtn">↑ Topo</button>
-    
-      </main>
+    </main>
 
-      <footer>
-        <div class="atendimento">
-          <p>
-            <span
-              >Atendimento Loja Virtual: <br />
-              Segunda a sexta 8h às 12h e das 14h às 18h,</span
-            >
-          </p>
-          <p>(47)3305-5150</p>
-          <p>sac@nanonexus.com.br</p>
+    <footer>
+      <div class="atendimento">
+        <p>
+          <span>
+            >Atendimento Loja Virtual: <br />
+            Segunda a sexta 8h às 12h e das 14h às 18h,
+          </span>
+        </p>
+        <p>(47)3305-5150</p>
+        <p>sac@nanonexus.com.br</p>
+      </div>
+      <div class="rodape-grid">
+        <div class="grid-item">
+          <h4>INSTITUCIONAL</h4>
+          <ul>
+            <li>_____</li><br>
+            <li><a href="QuemSomos.htmll">Quem somos</a></li>
+            <li><a href="QuemSomos.html">Localização</a></li>
+            <li><a href="QuemSomos.html">Nossas Lojas</a></li>
+          </ul>
         </div>
-        <div class="rodape-grid">
-          <div class="grid-item">
-            <h4>INSTITUCIONAL</h4>
-            <ul class="footer1">
-              <li>_____</li>
-              <li><a href="/TCC/Rodape/INSTITUCIONAL/QuemSomos.html">Quem somos</a></li>
-              <li><a href="nossas-lojas.html">Nossas Lojas</a></li>
-            </ul>
-          </div>
-          <div class="grid-item">
-            <h4>DÚVIDAS</h4>
-            <div></div>
-            <ul class="footer1">
-              <li>_____</li>
-              <li><a href="/TCC/Rodape/DÚVIDAS/Garantia.html#entrega" >Entrega</a></li>
-              <li><a href="/Rodape/DÚVIDAS/Garantia.html">Garantia</a></li>
-              <li><a href="como-comprar.html">Como comprar</a></li>
-              <li><a href="sobre-boletos.html">Sobre Boletos</a></li>
-              <li><a href="formas-pagamento.html">Formas de Pagamento</a></li>
-            </ul>
-          </div>
-          <div class="grid-item">
-            <h4>AJUDA</h4>
-            <ul class="footer1">
-              <li>_____</li>
-              <li><a href="sac.html">SAC</a></li>
-              <li><a href="fale-conosco.html">Fale conosco</a></li>
-              <li><a href="/TCC/Rodape/AJUDA/TermosDeAceite.html">Termos de aceite</a></li>
-              <li>
-                <a href="/TCC/Rodape/AJUDA/PoliticaPivacidade.html">Políticas de Privacidade</a>
-              </li>
-            </ul>
-          </div>
+        <div class="grid-item">
+          <h4>DÚVIDAS</h4>
+          <ul>
+            <li>_____</li><br>
+            <li><a href="TermosDeAceite.html">Pedido</a></li>
+            <li><a href="TermosDeAceite.html">Entrega & Devolução</a></li>
+            <li><a href="TermosDeAceite.html">Garantia</a></li>      
+          </ul>
         </div>
-      </footer>
+        <div class="grid-item">
+          <h4>AJUDA</h4>
+          <ul>
+            <li>_____</li><br>
+            <li><a href="QuemSomos.html">Fale conosco</a></li>
+            <li><a href="TermosDeAceite.html">Termos de aceite</a></li>
+            <li><a href="PoliticaPivacidade.html">Políticas de Privacidade</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
 
-      <script src="/TCC/JS/main.js"></script>
-      <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"
-      ></script>
-    </body>
+    <script src="/TCC/JS/main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
