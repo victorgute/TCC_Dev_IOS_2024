@@ -235,6 +235,13 @@ header {
   background-color: #555;
 }
 
+.atendimento p{
+  background-color: rgb(74, 144, 226);
+  border-radius: 9px;
+  padding: 10px;
+}
+
+
 
 @media (max-width: 800px){
   .header-button-size{
