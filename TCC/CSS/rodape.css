@@ -38,20 +38,21 @@ footer {
 }
 
 .atendimento {
-    background-color: white; /* Cor de fundo diferente */
+    background-color: white; 
     padding: 30px;
-    display: flex; /* Utilizando flexbox */
-    justify-content: flex-start; /* Alinhando os itens à esquerda */
-    align-items: center; /* Centralizando verticalmente */
+    display: flex; 
+    justify-content: flex-start; 
+    align-items: center; 
 
 }
 
 .atendimento p {
-    margin: 0; /* Removendo margem padrão dos parágrafos */
+    margin: 0; 
 }
 
 .atendimento p:not(:last-child) {
-    margin-right: 20%; /* Adicionando espaçamento entre os parágrafos */
+    margin-right: 10%; 
+    font-size: 20px;
 }
 
 .icon-logo{
@@ -70,9 +71,9 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    background-color: rgb(0, 0, 0); /* Cor de fundo das listas */
+    background-color: rgb(0, 0, 0); 
     padding: 20px;
-    margin-top: -20px; /* Reduzir espaçamento entre a área de atendimento e as listas */
+    margin-top: -20px; 
 }
 
 .grid-item {
@@ -101,12 +102,12 @@ footer {
 
 .grid-item ul li {
     margin-bottom: 5px;
-    list-style-type: none; /* Remover bolinhas dos itens da lista */
+    list-style-type: none; 
 }
 
 .grid-item ul li a {
-    text-decoration: none; /* Remover sublinhado padrão dos links */
-    color: white; /* Definir cor do texto dos links */
+    text-decoration: none; 
+    color: white; 
 }
 .grid-item ul li {
     color: rgb(74, 144, 226);;
@@ -131,4 +132,34 @@ footer .grid-item a{
 
 footer .grid-item a:hover {
     background: #1900ff;
+}
+
+@media (max-width: 800px){
+    .atendimento {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        font-size: 20px;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .loja-1{
+        padding-left: 100px;
+        font-size: 25px;
+        margin: 0px;
+    }
+    .loja-2{
+        font-size: 25px;
+    }
+    .numero{
+        font-size: 25px;
+    }
+    .conta{
+        font-size: 25px;
+    }
+    .footer-logo{
+        display: flex;
+        padding-right: 5%;
+        padding-bottom: 20px;
+    }
 }
