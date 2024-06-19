@@ -46,7 +46,7 @@
     padding: 30px 40px;
     border-radius: 8px;
     gap: 30px;
-    box-shadow: 5px 5px 8px rgba (0, 0, 0, 0.336);
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336);
 }
 
 #form-header{
@@ -69,10 +69,6 @@
     border-radius: 5px;
 }
 
-#mode-icon{
-  cursor: pointer;
-  font-size: 20px;
-}
 
 #input{
     display: flex;
@@ -90,7 +86,7 @@
 }
 
   #social-media img{
-    width: 60px;
+    width: 65px;
   }
 
   .input-box label{
@@ -128,6 +124,24 @@
 
   #forgot-password a{
     text-decoration: none;
-    font-size: 12px;
+    font-size: 15px;
     color: var(--color-dark-900);
+  }
+
+  #forgot-password a:hover{
+    color: #797984;
+  }
+
+  #login-button{
+    border: none;
+    background-color:#b5b5b5;
+    padding: 7px;
+    font-size: 18px;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  #login-button:hover{
+    transform: scale(1.05);
   }
