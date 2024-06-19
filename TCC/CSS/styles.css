@@ -140,6 +140,7 @@ header {
 .carrossel img {
   width: 100%;
   vertical-align: middle;
+  border-radius: 8px;
 }
 
 .prev,
@@ -241,4 +242,15 @@ header {
     flex-direction: column;
     text-align: center;
   }
+}
+section{
+  display: flex;
+}
+
+.Categorias{
+  text-align: center;
+}
+.underline{
+  display: inline-flex;
+  color: blue;
 }
