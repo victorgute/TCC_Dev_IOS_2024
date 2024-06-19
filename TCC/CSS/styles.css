@@ -140,6 +140,7 @@ header {
 .carrossel img {
   width: 100%;
   vertical-align: middle;
+  border-radius: 8px;
 }
 
 .prev,
@@ -248,17 +249,49 @@ header {
     flex-direction: column;
     text-align: center;
   }
+}
+section .Categorias{
+  display: flex;
+  margin-top: 5%;
+}
 
-  .logomarca{
-    width: 10px;
-    display: flex;
-    flex-direction: row;
-  }
-  .item-navbar-ajuda{
-    display: none;
-  }
+.Categorias{
+  text-align: center;
+}
+.underline{
+  display: inline-flex;
+  color: black;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border-bottom: 2px solid black;
+}
 
-  .item-navbar-favoritos{
-    display: none;
-  }
+.image-container {
+  overflow: hidden;
+  display: flex; /* Utiliza o modelo de layout flexbox */
+  position: relative; /* Posição relativa em relação ao seu container pai */
+  justify-content: start; /* Alinha os itens no início do eixo principal (horizontal) */
+  align-items: center; /* Centraliza os itens no eixo transversal (vertical) */
+  flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha se necessário */
+  margin-left: 10%; /* Margem à esquerda de 10% */
+}
+
+/* Estilo específico para imagens dentro de elementos com a classe 'container' */
+.image-container img {
+
+  flex: 0 0 30%; /* Define a largura fixa das imagens como 30% */
+  max-width: 100%; /* Garante que as imagens não ultrapassem 100% da largura do container */
+   /* Mantém a proporção original da altura */
+  margin: 0.8%; /* Margem entre as imagens */
+  border-radius: 5%;
+  border: solid #333;
+  width: 300px; /* Define a largura fixa das imagens como 200 pixels */
+}
+
+.zoom-image{
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+.zoom-image:hover .image-container{
+  transform: scale(1.1);
 }
