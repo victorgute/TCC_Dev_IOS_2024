@@ -242,6 +242,7 @@ header {
     flex-direction: column;
     text-align: center;
   }
+<<<<<<< HEAD
 }
 section{
   display: flex;
@@ -253,4 +254,19 @@ section{
 .underline{
   display: inline-flex;
   color: blue;
+=======
+
+  .logomarca{
+    width: 10px;
+    display: flex;
+    flex-direction: row;
+  }
+  .item-navbar-ajuda{
+    display: none;
+  }
+
+  .item-navbar-favoritos{
+    display: none;
+  }
+>>>>>>> 85a626634dcaf30e32fce8584a17269cc9052ec6
 }
