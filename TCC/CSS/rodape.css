@@ -80,18 +80,6 @@ footer {
     list-style-type: none;
 }
 
-.grid-item:nth-child(1) {
-    margin-right: auto;
-}
-
-.grid-item:nth-child(2) {
-    margin: 0 auto;
-}
-
-.grid-item:nth-child(3) {
-    margin-left: auto;
-}
-
 .grid-item h4 {
     margin-bottom: 10px;
 }
@@ -141,25 +129,39 @@ footer .grid-item a:hover {
         padding: 0;
         font-size: 20px;
         flex-direction: column;
-        gap: 50px;
+        gap: 40px;
     }
     .loja-1{
         padding-left: 100px;
-        font-size: 25px;
+        font-size: 20px;
         margin: 0px;
     }
     .loja-2{
-        font-size: 25px;
+        font-size: 20px;
+        padding-left: 20px;
+        
     }
     .numero{
         font-size: 25px;
+        padding-left: 50px;
     }
     .conta{
-        font-size: 25px;
+        font-size: 50px;
+       padding-left: 50px;
     }
     .footer-logo{
         display: flex;
         padding-right: 5%;
         padding-bottom: 20px;
+    }
+
+    .rodape-grid{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .grid-item-1{
+        text-align: center;
     }
 }
