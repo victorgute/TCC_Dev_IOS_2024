@@ -338,6 +338,10 @@ section .Categorias{
     font-size: 9px;
   }
 
+  .logomarca img{
+    width: 4rem;
+  }
+
   .cols{
     display: flex;
     flex-direction: column;
