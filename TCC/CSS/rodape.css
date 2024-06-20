@@ -1,31 +1,52 @@
-*{
+/* Reset de Estilo Básico */
+* {
     padding: 0;
     margin: 0;
 }
 
+/* Estilo do Corpo da Página */
 body{
-    background: rgb(83, 83, 83);
+    background-color: black;
+}
+/* Estilo da Seção Termos */
+.Termos {
+    background-image: radial-gradient(#fff, #b5b5b5);
 }
 
-.Termos p{
+.Termos h1, h5{
+    text-align: center;
+}
+.Termos p {
+    text-align: center;
     z-index: 99;
     margin-left: 20px;
-    color: white;
+    color: black;
+    margin-bottom: 1rem;
 }
-.Termos h1{
+.Termos h1 {
     font-size: 500%;
     z-index: 99;
-    margin-left: 20px;
-    color: rgb(74, 144, 226);
+    margin-left: 1.2%;
+    color: #4a90e1;
 }
-.Termos h5{
-    font-size: 200%;
+.Termos h5 {
+    
+    font-size: 250%;
+    line-height: 1em;
     z-index: 99;
-    margin-left: 20px;
-    color: rgb(74, 144, 226);
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    color: #4a90e1;
 }
 
+/* Estilo de Parágrafos Adicionais */
+.par {
+    word-spacing: 0.3em;
+    line-height: 1.5em;
+    margin-bottom: 1rem;
+}
 
+/* Estilo do Rodapé Geral */
 footer {
     position: relative;
     bottom: 0;
@@ -33,131 +54,132 @@ footer {
     width: 100%;
 }
 
-.footer1 :hover{
-    transition: all 0.8s;
-}
-
+/* Estilo do Atendimento no Rodapé */
 .atendimento {
-    background-color: white; 
+    background-color: rgb(27, 26, 26); 
+    color: white; 
     padding: 30px;
     display: flex; 
     justify-content: flex-start; 
-    align-items: center; 
-
+    align-items: center;
 }
 
 .atendimento p {
-    margin: 0; 
-}
-
-.atendimento p:not(:last-child) {
-    margin-right: 7%; 
+    margin: 0;
     font-size: 20px;
 }
 
-.icon-logo{
+.atendimento p:not(:last-child) {
+    margin-right: 7%;
+}
+
+/* Estilo do Logo do Ícone no Rodapé */
+.icon-logo {
     background-color: black;
     padding-left: 46%;
     padding-bottom: 10px;
     padding-top: 10px;
-  }
+}
 
-  .atendimento{
-    background-color:  rgb(0, 0, 0);
-    color: white;
-  }
-
+/* Grid do Rodapé */
 .rodape-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    background-color: rgb(0, 0, 0); 
+    background-color: rgb(27, 26, 26);
     padding: 20px;
-    margin-top: -20px; 
+    margin-top: -20px;
 }
 
 .grid-item {
     list-style-type: none;
+    margin-left: 100px;
 }
 
 .grid-item h4 {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    color: #4a90e1;
+    margin-left: 1.5em;
 }
 
 .grid-item ul {
     padding: 0;
+    margin-left: 10px;
 }
 
 .grid-item ul li {
-    margin-bottom: 5px;
-    list-style-type: none; 
+    margin-bottom: 9px;
+    list-style-type: none;
+    color: #4a90e1;
+    padding-left: 1rem ;
 }
 
 .grid-item ul li a {
-    text-decoration: none; 
-    color: white; 
-}
-.grid-item ul li {
-    color: rgb(74, 144, 226);;
+    text-decoration: none;
+    color: white;
+    transition: color 0.15s;
 }
 
-.grid-item h4 {
-color: rgb(74, 144, 226);
-}
-
-
-footer .grid-item a{
+footer .grid-item a {
     cursor: pointer;
     margin-top: 20px;
-    margin-bottom: rem;
     border: none;
-    border-radius: 7px;
-    background: rgb(74, 144, 226);
-    padding-left: 1rem;
     padding-right: 1rem;
-    transition: all 0.15s ease-in-out;
 }
 
 footer .grid-item a:hover {
-    background: #1900ff;
+    color: #4a90e1;
 }
 
-@media (max-width: 800px){
+/* Seção Final do Rodapé */
+.endsite {
+    word-spacing: 0.1em;
+    color: white;
+    text-align: center;
+    background-color: rgb(88, 88, 88);
+}
+
+
+
+/* Estilo para Responsividade */
+@media (max-width: 800px) {
     .atendimento {
-        display: flex;
-        justify-content: center;
-        padding: 0;
-        font-size: 20px;
         flex-direction: column;
+        justify-content: center;
+        text-align: center;
         gap: 40px;
         padding-top: 20px;
     }
-    .loja-1{
+
+    .loja-1 {
         display: flex;
         font-size: 15px;
         text-align: center;
-
     }
-    .numero{
+
+    .numero {
         padding-left: 50px;
     }
-    .conta{
+
+    .conta {
         font-size: 50px;
-       padding-left: 50px;
+        padding-left: 50px;
     }
-    .footer-logo{
+
+    .footer-logo {
         display: flex;
         padding-right: 5%;
         padding-bottom: 20px;
     }
 
-    .rodape-grid{
+    .rodape-grid {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
-    .grid-item-1{
+
+    .grid-item-1 {
         text-align: center;
     }
 }
