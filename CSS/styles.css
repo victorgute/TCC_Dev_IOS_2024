@@ -335,7 +335,7 @@ section .Categorias{
 
   .menu-principal ul{
     display: flex;
-    font-size: 13px;
+    font-size: 9px;
   }
 
   .cols{
