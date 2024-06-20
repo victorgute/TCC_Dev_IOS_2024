@@ -1,14 +1,17 @@
-/* Reset de Estilo Básico */
 * {
     padding: 0;
     margin: 0;
 }
 
-/* Estilo do Corpo da Página */
 body{
     background-color: black;
 }
-/* Estilo da Seção Termos */
+footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
 .Termos {
     background-image: radial-gradient(#fff, #b5b5b5);
 }
@@ -42,25 +45,15 @@ body{
 .footer-logo img:hover{
     background-color:rgb(74, 144, 226);
     border-radius: 999px;
-    transition: 0.5s;
 }
 
-/* Estilo de Parágrafos Adicionais */
 .par {
     word-spacing: 0.3em;
     line-height: 1.5em;
     margin-bottom: 1rem;
 }
 
-/* Estilo do Rodapé Geral */
-footer {
-    position: relative;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-}
 
-/* Estilo do Atendimento no Rodapé */
 .atendimento {
     background-color: rgb(27, 26, 26); 
     color: white; 
@@ -76,10 +69,10 @@ footer {
 }
 
 .atendimento p:not(:last-child) {
-    margin-right: 7%;
+    margin-right: 15%;
 }
 
-/* Estilo do Logo do Ícone no Rodapé */
+
 .icon-logo {
     background-color: black;
     padding-left: 46%;
@@ -87,7 +80,7 @@ footer {
     padding-top: 10px;
 }
 
-/* Grid do Rodapé */
+
 .rodape-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -137,7 +130,7 @@ footer .grid-item a:hover {
     color: #4a90e1;
 }
 
-/* Seção Final do Rodapé */
+
 .endsite {
     word-spacing: 0.1em;
     color: white;
@@ -154,13 +147,13 @@ footer .grid-item a:hover {
         justify-content: center;
         text-align: center;
         gap: 40px;
-        padding-top: 20px;
     }
 
     .loja-1 {
         display: flex;
         font-size: 15px;
         text-align: center;
+        padding-left: 50px;
     }
 
     .numero {
@@ -174,8 +167,6 @@ footer .grid-item a:hover {
 
     .footer-logo {
         display: flex;
-        padding-right: 5%;
-        padding-bottom: 20px;
     }
 
     .rodape-grid {
@@ -185,7 +176,8 @@ footer .grid-item a:hover {
         text-align: center;
     }
 
-    .grid-item-1 {
+    .grid-item {
         text-align: center;
+        margin: 0px;
     }
 }
