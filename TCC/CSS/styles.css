@@ -5,6 +5,10 @@ body {
   box-sizing: border-box;
 }
 
+.carrosselCOR{
+  background-color:  #b5b5b5;
+}
+
 .menu-principal {
   background-color: black;
   padding: 10px 20px;
@@ -15,6 +19,7 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+
 
 .logomarca img {
   width: 6rem;
@@ -48,6 +53,8 @@ body {
   color: rgb(95, 135, 245);
 }
 
+
+
 .navbar .logomarca {
   display: flex;
   align-items: center;
@@ -63,9 +70,6 @@ body {
   transition: all 0.2s;
 }
 
-.button-tres {
-  display: none;
-}
 
 header {
   background-image: radial-gradient(#fff, #c7c7c7);
@@ -242,14 +246,6 @@ header {
   padding: 10px;
 }
 
-
-
-@media (max-width: 800px){
-  .header-button-size{
-    flex-direction: column;
-    text-align: center;
-  }
-}
 section .Categorias{
   display: flex;
   margin-top: 5%;
@@ -294,4 +290,33 @@ section .Categorias{
 }
 .zoom-image:hover .image-container{
   transform: scale(1.1);
+}
+@media (max-width: 800px){
+  .header-button-size{
+    flex-direction: column;
+    text-align: center;
+  }
+  .tres-pontos{
+    display: flex;
+    margin: 0px;
+  }
+  .item-navbar-ajuda{
+    display: none;
+  }
+  .item-navbar-favoritos{
+    display: none;
+  }
+  .item{
+    display: flex;
+  }
+  .navbar{
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .menu-principal ul{
+    display: flex;
+    font-size: 13px;
+  }
 }

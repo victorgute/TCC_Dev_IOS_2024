@@ -130,19 +130,15 @@ footer .grid-item a:hover {
         font-size: 20px;
         flex-direction: column;
         gap: 40px;
+        padding-top: 20px;
     }
     .loja-1{
-        padding-left: 100px;
-        font-size: 20px;
-        margin: 0px;
-    }
-    .loja-2{
-        font-size: 20px;
-        padding-left: 20px;
-        
+        display: flex;
+        font-size: 15px;
+        text-align: center;
+
     }
     .numero{
-        font-size: 25px;
         padding-left: 50px;
     }
     .conta{

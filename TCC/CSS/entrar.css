@@ -145,3 +145,9 @@
   #login-button:hover{
     transform: scale(1.05);
   }
+
+  @media (max-width:800px){
+    .icon-logo{
+      padding-left: 38%;
+    }
+  }
