@@ -25,6 +25,12 @@ body{
     color: rgb(74, 144, 226);
 }
 
+.footer-logo img:hover{
+    background-color:rgb(74, 144, 226);
+    border-radius: 999px;
+    transition: 0.5s;
+}
+
 
 footer {
     position: relative;

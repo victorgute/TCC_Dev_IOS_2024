@@ -5,6 +5,9 @@ body {
   box-sizing: border-box;
 }
 
+header {
+  background-image: radial-gradient(#fff, #c7c7c7);
+}
 .carrosselCOR{
   background-color:  #b5b5b5;
 }
@@ -71,9 +74,28 @@ body {
 }
 
 
-header {
-  background-image: radial-gradient(#fff, #c7c7c7);
+.grey-backcolor{
+  background-color: #2c2c2c;
 }
+
+.page-inner-content{
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.cols{
+  display: grid;
+  padding: 4rem 1rem;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.cols-3{
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+
 
 .header-button-size {
   display: flex;
@@ -318,5 +340,10 @@ section .Categorias{
   .menu-principal ul{
     display: flex;
     font-size: 13px;
+  }
+
+  .cols{
+    display: flex;
+    flex-direction: column;
   }
 }
