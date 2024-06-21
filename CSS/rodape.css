@@ -63,14 +63,16 @@ footer {
     align-items: center;
 }
 
+.horario p{
+    color: #fff;
+}
+
 .atendimento p {
     margin: 0;
     font-size: 20px;
 }
 
-.atendimento p:not(:last-child) {
-    margin-right: 15%;
-}
+
 
 
 .icon-logo {
@@ -82,17 +84,15 @@ footer {
 
 
 .rodape-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    display: flex;
+    grid-template-columns: repeat(4, 1fr);
     background-color: rgb(27, 26, 26);
     padding: 20px;
-    margin-top: -20px;
+    
 }
 
 .grid-item {
     list-style-type: none;
-    margin-left: 100px;
 }
 
 .grid-item h4 {
@@ -136,6 +136,10 @@ footer .grid-item a:hover {
     color: white;
     text-align: center;
     background-color: rgb(88, 88, 88);
+}
+
+.horario p{
+    font-size: 16px;
 }
 
 

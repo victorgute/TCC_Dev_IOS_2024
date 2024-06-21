@@ -74,8 +74,17 @@ header {
 }
 
 
+.main{
+  background-color:#ebebeb;
+}
+
+
 .grey-backcolor{
   background-color: #2c2c2c;
+}
+
+.controle img{
+  width: 180px;
 }
 
 .page-inner-content{
@@ -93,6 +102,70 @@ header {
 .cols-3{
   grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
+}
+
+.cols-3 img{
+  max-width: 100%;
+  margin-left: 50px;
+}
+.cols-4 img{
+  max-width: 100%;
+  
+}
+
+.cols-4{
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.cols>*{
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.cols>*:hover{
+  transform: translateY(-5px);
+}
+
+.section-title{
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 1.8rem;
+}
+
+.subtitle-underline{
+  width: 100px;
+  height: 5px;
+  background-color: rgb(95, 135, 245);
+  border-radius: 9999px;
+  margin: 8px auto 0 auto;
+}
+
+.product{
+  color: #2c2c2c;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  margin-left: 60px;
+}
+
+.atendimento-3 p{
+  font-size: 10px;
+}
+
+i{display: flex;}
+
+.product-name{
+  font-weight: 600;
+  margin-top: 0.4rem;
+}
+
+.rate{
+  color:rgb(95, 135, 245);
+  font-size: 1.3rem;
+}
+
+.product-price span{
+  font-weight: 600;
 }
 
 
@@ -279,36 +352,7 @@ section .Categorias{
   border-bottom: 2px solid black;
 }
 
-.image-container {
-  overflow: hidden;
-  display: flex; /* Utiliza o modelo de layout flexbox */
-  position: relative; /* Posição relativa em relação ao seu container pai */
-  justify-content: start; /* Alinha os itens no início do eixo principal (horizontal) */
-  align-items: center; /* Centraliza os itens no eixo transversal (vertical) */
-  flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha se necessário */
-  margin-left: 10%; /* Margem à esquerda de 10% */
-}
 
-/* Estilo específico para imagens dentro de elementos com a classe 'container' */
-.image-container img {
-
-  flex: 0 0 30%; /* Define a largura fixa das imagens como 30% */
-  max-width: 100%; /* Garante que as imagens não ultrapassem 100% da largura do container */
-   /* Mantém a proporção original da altura */
-  margin: 0.8%; /* Margem entre as imagens */
-  border-radius: 5%;
-  border: solid #333;
-  width: 300px; /* Define a largura fixa das imagens como 200 pixels */
-}
-
-.zoom-image{
-  width: 100%;
-  height: auto;
-  transition: transform 0.3s ease;
-}
-.zoom-image:hover .image-container{
-  transform: scale(1.1);
-}
 @media (max-width: 800px){
   .header-button-size{
     flex-direction: column;
