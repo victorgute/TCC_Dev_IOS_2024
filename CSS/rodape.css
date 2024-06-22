@@ -142,6 +142,10 @@ footer .grid-item a:hover {
     font-size: 16px;
 }
 
+.grid-item {
+    padding-left: 30px;
+}
+
 
 
 /* Estilo para Responsividade */

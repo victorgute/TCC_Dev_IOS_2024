@@ -352,6 +352,16 @@ section .Categorias{
   border-bottom: 2px solid black;
 }
 
+.exclusive-container{
+  color: #fff;
+  flex-direction: row-reverse;
+  padding: 3rem 1rem;
+}
+
+.exclusive-container img{
+  max-width: 900px;
+}
+
 
 @media (max-width: 800px){
   .header-button-size{
@@ -386,8 +396,16 @@ section .Categorias{
     width: 4rem;
   }
 
-  .cols{
-    display: flex;
-    flex-direction: column;
+  .section-title{
+    font-size: 1rem;
   }
+
+  .cols-3{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .cols-4{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
 }
