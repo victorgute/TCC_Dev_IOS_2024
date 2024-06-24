@@ -1,149 +1,142 @@
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
-body{
-    background-color: black;
+body {
+  background-color: black;
 }
 footer {
-    position: relative;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 .Termos {
-    background-image: radial-gradient(#fff, #b5b5b5);
+  background-image: radial-gradient(#fff, #b5b5b5);
 }
 
-.Termos h1, h5{
-    text-align: center;
+.Termos h1,
+h5 {
+  text-align: center;
 }
 .Termos p {
-    text-align: center;
-    z-index: 99;
-    margin-left: 20px;
-    color: black;
-    margin-bottom: 1rem;
+  text-align: center;
+  z-index: 99;
+  margin-left: 20px;
+  color: black;
+  margin-bottom: 1rem;
 }
 .Termos h1 {
-    font-size: 500%;
-    z-index: 99;
-    margin-left: 1.2%;
-    color: #4a90e1;
+  font-size: 500%;
+  z-index: 99;
+  margin-left: 1.2%;
+  color: #4a90e1;
 }
 .Termos h5 {
-    
-    font-size: 250%;
-    line-height: 1em;
-    z-index: 99;
-    margin-left: 1rem;
-    margin-bottom: 1rem;
-    color: #4a90e1;
+  font-size: 250%;
+  line-height: 1em;
+  z-index: 99;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  color: #4a90e1;
 }
 
-.footer-logo img:hover{
-    background-color:rgb(74, 144, 226);
-    border-radius: 999px;
+.footer-logo img:hover {
+  background-color: rgb(74, 144, 226);
+  border-radius: 999px;
 }
 
 .par {
-    word-spacing: 0.3em;
-    line-height: 1.5em;
-    margin-bottom: 1rem;
+  word-spacing: 0.3em;
+  line-height: 1.5em;
+  margin-bottom: 1rem;
 }
-
 
 .atendimento {
-    background-color: rgb(27, 26, 26); 
-    color: white; 
-    padding: 30px;
-    display: flex; 
-    justify-content: flex-start; 
-    align-items: center;
+  background-color: rgb(27, 26, 26);
+  color: white;
+  padding: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.horario p{
-    color: #fff;
+.horario p {
+  color: #fff;
 }
 
 .atendimento p {
-    margin: 0;
-    font-size: 20px;
+  margin: 0;
+  font-size: 20px;
 }
-
-
-
 
 .icon-logo {
-    background-color: black;
-    padding-left: 46%;
-    padding-bottom: 10px;
-    padding-top: 10px;
+  background-color: black;
+  padding-left: 46%;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
-
 .rodape-grid {
-    display: flex;
-    grid-template-columns: repeat(4, 1fr);
-    background-color: rgb(27, 26, 26);
-    padding: 20px;
-    
+  display: flex;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: rgb(27, 26, 26);
+  padding: 20px;
 }
 
 .grid-item {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .grid-item h4 {
-    margin-bottom: 5px;
-    color: #4a90e1;
-    margin-left: 1.5em;
+  margin-bottom: 5px;
+  color: #4a90e1;
+  margin-left: 1.5em;
 }
 
 .grid-item ul {
-    padding: 0;
-    margin-left: 10px;
+  padding: 0;
+  margin-left: 10px;
 }
 
 .grid-item ul li {
-    margin-bottom: 9px;
-    list-style-type: none;
-    color: #4a90e1;
-    padding-left: 1rem ;
+  margin-bottom: 9px;
+  list-style-type: none;
+  color: #4a90e1;
+  padding-left: 1rem;
 }
 
 .grid-item ul li a {
-    text-decoration: none;
-    color: white;
-    transition: color 0.15s;
+  text-decoration: none;
+  color: white;
+  transition: color 0.15s;
 }
 
 footer .grid-item a {
-    cursor: pointer;
-    margin-top: 20px;
-    border: none;
-    padding-right: 1rem;
+  cursor: pointer;
+  margin-top: 20px;
+  border: none;
+  padding-right: 1rem;
 }
 
 footer .grid-item a:hover {
-    color: #4a90e1;
+  color: #4a90e1;
 }
-
 
 .endsite {
-    word-spacing: 0.1em;
-    color: white;
-    text-align: center;
-    background-color: rgb(88, 88, 88);
+  word-spacing: 0.1em;
+  color: white;
+  text-align: center;
+  background-color: rgb(88, 88, 88);
 }
 
-.horario p{
-    font-size: 16px;
+.horario p {
+  font-size: 16px;
 }
 
 .grid-item {
-    padding-left: 10px;
+  padding-left: 30px;
 }
 
 
@@ -158,42 +151,42 @@ footer .grid-item a:hover {
 
 /* Estilo para Responsividade */
 @media (max-width: 800px) {
-    .atendimento {
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        gap: 40px;
-    }
+  .atendimento {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 40px;
+  }
 
-    .loja-1 {
-        display: flex;
-        font-size: 15px;
-        text-align: center;
-        padding-left: 50px;
-    }
+  .loja-1 {
+    display: flex;
+    font-size: 15px;
+    text-align: center;
+    padding-left: 50px;
+  }
 
-    .numero {
-        padding-left: 50px;
-    }
+  .numero {
+    padding-left: 50px;
+  }
 
-    .conta {
-        font-size: 50px;
-        padding-left: 50px;
-    }
+  .conta {
+    font-size: 50px;
+    padding-left: 50px;
+  }
 
-    .footer-logo {
-        display: flex;
-    }
+  .footer-logo {
+    display: flex;
+  }
 
-    .rodape-grid {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+  .rodape-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
-    .grid-item {
-        text-align: center;
-        margin: 0px;
-    }
+  .grid-item {
+    text-align: center;
+    margin: 0px;
+  }
 }
