@@ -181,7 +181,8 @@ button {
 
 #filterButton {
     background-color: #4a90e1;
-    color: black;
+    color: white;
+    margin: 5px 0 2px 0;
 }
 
 #sortButtons button {
@@ -200,8 +201,8 @@ input[type="checkbox"] {
     appearance: none;
     width: 20px; /* Adjust size */
     height: 20px; /* Adjust size */
-    margin: 0; /* Reset margin */
-    border: 2px solid gray; /* Gray border */
+    margin-top: 5px; /* Reset margin */
+    border: 2px solid black; /* Gray border */
     border-radius: 5px;
     outline: none;
     cursor: pointer;
@@ -212,7 +213,7 @@ input[type="checkbox"] {
 
 input[type="checkbox"]:checked {
     background-color: green;
-    border-color: gray;
+    border-color: black;
 }
 
 input[type="checkbox"]::before {
@@ -403,3 +404,16 @@ footer {
         width: 100%;
     }
 }
+
+.category-selector {
+    margin-top: 20px;
+  }
+  
+  #categorySelect {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  

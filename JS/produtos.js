@@ -1,16 +1,25 @@
-// Array de produtos (Exemplo)
-const products = [
-    { name: "AEROCOOL KCAS FULL RANGE, 700W, 80 PLUS BRONZE", category: "Aerecool", image: "img/fontes/font1.jpg", price: 300 },
-    { name: "AEROCOOL KCAS 500W BRONZE 80 PLUS", category: "Aerecool", image: "img/fontes/font2.webp", price: 250 },
-    { name: "COOLER MASTER GX 1250 GOLD", category: "Cooler Master", image: "img/fontes/font3.webp", price: 1.300 },
-    { name: "CORSAIR RM750E, 750W, FULL MODULAR, 80 PLUS GOLD", category: "Corsair", image: "img/fontes/font4.jpeg", price: 1000 },
-    { name: "CORSAIR RM1200X, 1200W, FULL MODULAR, 80 PLUS GOLD", category: "Corsair", image: "img/fontes/font5.jpeg", price: 2300 },
-];
+const products = {
+    fontes: [
+        { name: "AEROCOOL KCAS FULL RANGE, 700W, 80 PLUS BRONZE", category: "Aerecool", image: "img/fontes/font1.jpg", price: 300 },
+        { name: "AEROCOOL KCAS 500W BRONZE 80 PLUS", category: "Aerecool", image: "img/fontes/font2.webp", price: 250 },
+        { name: "COOLER MASTER GX 1250 GOLD", category: "Cooler Master", image: "img/fontes/font3.webp", price: 1300 },
+        { name: "CORSAIR RM750E, 750W, FULL MODULAR, 80 PLUS GOLD", category: "Corsair", image: "img/fontes/font4.jpeg", price: 1000 },
+        { name: "CORSAIR RM1200X, 1200W, FULL MODULAR, 80 PLUS GOLD", category: "Corsair", image: "img/fontes/font5.jpeg", price: 2300 },
+    ],
+    monitores: [
+        { name: "Samsung Monitor LED 24\"", category: "Samsung", image: "img/monitores/monitor1.jpg", price: 900 },
+        { name: "LG Monitor Ultrawide 29\"", category: "LG", image: "img/monitores/monitor2.jpg", price: 1200 },
+        { name: "Dell Monitor Curvo 34\"", category: "Dell", image: "img/monitores/monitor3.jpg", price: 2500 },
+    ],
+    // Adicione mais categorias e produtos conforme necessário
+};
 
-// Função para gerar o filtro de marcas
+let currentCategory = "fontes";
+
 function generateFilter() {
     const filterElement = document.getElementById("filter");
-    const uniqueCategories = [...new Set(products.map(product => product.category))];
+    filterElement.innerHTML = "";
+    const uniqueCategories = [...new Set(products[currentCategory].map(product => product.category))];
 
     uniqueCategories.forEach(category => {
         const checkbox = document.createElement("input");
@@ -29,7 +38,6 @@ function generateFilter() {
     });
 }
 
-// Função para atualizar a lista de produtos com base nos filtros
 function updateProductsList() {
     const checkedCategories = Array.from(document.querySelectorAll('input[name="category"]:checked')).map(checkbox => checkbox.value);
     const searchInput = document.getElementById("searchInput").value.toLowerCase();
@@ -40,32 +48,28 @@ function updateProductsList() {
 
     let visibleProductsCount = 0;
 
-    products.forEach(product => {
+    products[currentCategory].forEach(product => {
         if (checkedCategories.includes(product.category) && product.name.toLowerCase().includes(searchInput) && product.price <= priceRange) {
             visibleProductsCount++;
             
             const productElement = document.createElement("div");
             productElement.classList.add("product");
             
-            // Adicionando a imagem do produto
             const productImage = document.createElement("img");
             productImage.src = product.image;
             productImage.alt = product.name;
             productElement.appendChild(productImage);
 
-            // Adicionando o ícone de favoritar
             const favoriteIcon = document.createElement("span");
             favoriteIcon.classList.add("favorite-icon");
             favoriteIcon.innerHTML = "&#9733;"; // HTML entity for star
             favoriteIcon.onclick = () => toggleFavorite(favoriteIcon);
             productElement.appendChild(favoriteIcon);
-            
-            // Adicionando o nome do produto
+
             const productName = document.createElement("div");
             productName.textContent = product.name;
             productElement.appendChild(productName);
 
-            // Adicionando o preço do produto
             const productPrice = document.createElement("div");
             productPrice.classList.add("product-price");
             productPrice.textContent = `R$ ${product.price}`;
@@ -75,12 +79,10 @@ function updateProductsList() {
         }
     });
 
-    // Atualizando a contagem de produtos visíveis
     const productCount = document.getElementById("productCount");
     productCount.textContent = `Produtos disponíveis: ${visibleProductsCount}`;
 }
 
-// Função para mostrar ou esconder o filtro
 function toggleFilter() {
     const filterElement = document.getElementById("filter");
     if (filterElement.style.display === "none") {
@@ -90,65 +92,46 @@ function toggleFilter() {
     }
 }
 
-// Função para ordenar os produtos de A-Z
 function sortProductsAZ() {
-    products.sort((a, b) => a.name.localeCompare(b.name));
+    products[currentCategory].sort((a, b) => a.name.localeCompare(b.name));
     updateProductsList();
 }
 
-// Função para ordenar os produtos de Z-A
 function sortProductsZA() {
-    products.sort((a, b) => b.name.localeCompare(a.name));
+    products[currentCategory].sort((a, b) => b.name.localeCompare(a.name));
     updateProductsList();
 }
 
-// Função para ordenar os produtos pelo menor preço
 function sortPriceLowToHigh() {
-    products.sort((a, b) => a.price - b.price);
+    products[currentCategory].sort((a, b) => a.price - b.price);
     updateProductsList();
 }
 
-// Função para ordenar os produtos pelo maior preço
 function sortPriceHighToLow() {
-    products.sort((a, b) => b.price - a.price);
+    products[currentCategory].sort((a, b) => b.price - a.price);
     updateProductsList();
 }
 
-// Função para pesquisa de produtos
 function searchProducts() {
     updateProductsList();
 }
 
-// Função para favoritar produtos
 function toggleFavorite(icon) {
     icon.classList.toggle("favorited");
 }
 
-// Função para atualizar o filtro de preço
 function updatePriceFilter(value) {
     document.getElementById("priceValue").textContent = `Até R$${value}`;
     updateProductsList();
 }
 
-// Chamar a função para gerar o filtro e a lista quando a página carregar
+function updateCategory() {
+    currentCategory = document.getElementById("categorySelect").value;
+    generateFilter();
+    updateProductsList();
+}
+
 window.onload = function() {
     generateFilter();
     updateProductsList();
 };
-
-document.addEventListener("DOMContentLoaded", () => {
-    const productGrid = document.getElementById('productGrid');
-
-    products.forEach(product => {
-        const productDiv = document.createElement('div');
-        productDiv.className = 'product';
-
-        productDiv.innerHTML = `
-            <img src="${product.image}" alt="${product.name}">
-            <h3>${product.name}</h3>
-            <p class="product-price">R$ ${product.price}</p>
-        `;
-
-        productGrid.appendChild(productDiv);
-    });
-});
