@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -44,3 +45,182 @@
     
 </body>
 </html>
+=======
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NanoNexus</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/CSS/produtos.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="icon-logo">
+        <a href="/index.html"
+          ><img src="/img/logomarca.png" alt="logo" width="100px"
+        /></a>
+      </nav>
+    </header>
+    <main>
+      <div id="contentWrapper">
+        <div id="filterSection">
+            <h1>Produtos</h1>
+            <!-- Campo de pesquisa -->
+            <div class="search-wrapper">
+              <input type="text" id="searchInput" placeholder="Pesquisar produtos..." oninput="searchProducts()" />
+            </div>
+          
+            <!-- Seletor de categoria de produto -->
+            <div class="category-selector">
+              <label for="categorySelect">Escolher categoria:</label>
+              <select id="categorySelect" onchange="updateCategory()">
+                <option value="fontes">Fontes</option>
+                <option value="monitores">Monitores</option>
+                <!-- Adicione mais opções de categorias aqui -->
+              </select>
+            </div>
+          
+            <!-- Filtro de preço -->
+            <div class="price-filter">
+              <label for="priceRange">Filtrar por preço:</label>
+              <input type="range" id="priceRange" min="0" max="9000" step="100" value="9000" oninput="updatePriceFilter(this.value)" />
+              <span id="priceValue">Até R$9000</span>
+            </div>
+          
+            <button id="filterButton" onclick="toggleFilter()">Filtro</button>
+            <div id="filter">
+              <!-- Filtro de marcas será gerado aqui -->
+            </div>
+        </div>
+          
+        <div id="mainContent">
+          <div id="topButtons">
+            <div id="productCount">
+              <!-- Contagem de produtos será atualizada aqui -->
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Ordenar</button>
+              <div class="dropdown-content">
+                <a href="#" onclick="sortProductsAZ()">Ordenar A-Z</a>
+                <a href="#" onclick="sortProductsZA()">Ordenar Z-A</a>
+                <a href="#" onclick="sortPriceLowToHigh()"
+                  >Preço: Menor <br>para Maior</a
+                >
+                <a href="#" onclick="sortPriceHighToLow()"
+                  >Preço: Maior <br>para Menor</a
+                >
+              </div>
+            </div>
+          </div>
+          <div id="productsList" class="product-grid">
+            <!-- Lista de produtos será gerada aqui -->
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+        <div class="atendimento">
+          <div class="rodape-grid">
+            <div class="grid-item">
+              <div class="atendimento-3">
+                <h4>ATENDIMENTO</h4>
+                <ul>
+                  <li>_____</li>
+                  <li>
+                    <a href="#"
+                      ><p>Telefone:</p>
+                      <p>(47)3305-5150</p></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><p>E-mail:</p>
+                      <p>sac@nanonexus.com.br</p></a
+                    >
+                  </li>
+                  <li>______________________________</li>
+                  <li class="horario">
+                    <p>
+                      <i class="fa-regular fa-clock"></i> Horário de Atendimento
+                    </p>
+                  </li>
+                  <li class="horario">
+                    <p>Segunda a sexta 8h às 12h e das 14h às 18h</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="grid-item">
+              <h4>INSTITUCIONAL</h4>
+              <ul>
+                <li>_____</li>
+                <li><a href="HTML/QuemSomos.html">Quem somos</a></li>
+                <li><a href="HTML/">Localização</a></li>
+                <li><a href="QuemSomos.html">Nossas Lojas</a></li>
+              </ul>
+            </div>
+  
+            <div class="grid-item">
+              <h4>DÚVIDAS</h4>
+              <ul>
+                <li>_____</li>
+                <li><a href="TermosDeAceite.html">Pedido</a></li>
+                <li><a href="TermosDeAceite.html">Entrega & Devolução</a></li>
+                <li><a href="TermosDeAceite.html">Garantia</a></li>
+              </ul>
+            </div>
+  
+            <div class="grid-item">
+              <h4>AJUDA</h4>
+              <ul>
+                <li>_____</li>
+                <li><a href="QuemSomos.html">Fale conosco</a></li>
+                <li><a href="HTML/TermosDeAceite.html">Termos de aceite</a></li>
+                <li>
+                  <a href="HTML/PoliticaPivacidade.html"
+                    >Políticas de Privacidade</a
+                  >
+                </li>
+              </ul>
+            </div>
+  
+            <div class="footer-logo">
+             </a>
+              <a
+                href="https://www.instagram.com/nano.nexus2024/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img src="/img/insta-logo.png" alt="instagram" width="80px"
+              /></a>
+              <a
+                href="https://github.com/victorgute/TCC_Dev_IOS_2024/tree/main/TCC"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img src="/img/github-logo2.png" alt="Github-logo" width="80px"
+              /></a>
+               <a class="reciclagem"href="/HTML/reciclagem.html"
+                ><img src="/img/reciclagem-logo.png" alt="instagram" width="70px"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="endsite">
+          <small
+            >NanoNexus® é uma marca registrada de NanoNexus S.A | CNPJ:
+            00.000.000/0000-00 | Todos os direitos reservados. Os preços
+            anunciados neste site ou via e-mail promocional podem ser alterados
+            sem prévio aviso. O NanoNexus não é responsável por erros descritivos.
+            As fotos contidas nesta página são meramente ilustrativas do produto e
+            podem variar de acordo com o fornecedor/lote do fabricante. <br />
+            &copy; 2024 NanoNexus®. Todos os direitos reservados.
+          </small>
+        </div>
+      </footer>
+    <script src="/JS/produtos.js"></script>
+  </body>
+</html>
+>>>>>>> daca12c5333ea33e17a4ce441f05fd9958387b5c
