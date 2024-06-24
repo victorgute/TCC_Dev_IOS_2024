@@ -128,7 +128,8 @@ footer .grid-item a:hover {
   word-spacing: 0.1em;
   color: white;
   text-align: center;
-  background-color: rgb(88, 88, 88);
+  background-color: rgb(27, 26, 26);
+  text-decoration: none;
 }
 
 .horario p {
@@ -136,7 +137,7 @@ footer .grid-item a:hover {
 }
 
 .grid-item {
-  padding-left: 30px;
+  padding-left: 10px;
 }
 
 
