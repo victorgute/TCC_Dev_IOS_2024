@@ -139,6 +139,16 @@ footer .grid-item a:hover {
   padding-left: 30px;
 }
 
+
+.copyrigth{
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    background-color: rgb(27, 26, 26);
+  }
+
+
+
 /* Estilo para Responsividade */
 @media (max-width: 800px) {
   .atendimento {

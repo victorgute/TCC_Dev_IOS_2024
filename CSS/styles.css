@@ -390,6 +390,21 @@ section .Categorias{
   margin: 5px 0px;
 }
 
+.testimonial p:first-child{
+  font-weight: bold;
+  font-size: 5rem;
+  color: rgb(95, 135, 245);
+  margin: 3rem;
+  line-height: 2rem;
+}
+
+.testimonial p:last-child{
+  font-weight: bold;
+}
+
+
+
+
 @media (max-width: 800px){
   .header-button-size{
     flex-direction: column;
@@ -445,5 +460,14 @@ section .Categorias{
   .exclusive-container{
     flex-direction: column-reverse;
   }
+
+  .testimonials{
+    flex-direction: column;
+  }
+  
+  .testimonial{
+    margin-bottom: 1.2rem;
+  }
+
 
 }
