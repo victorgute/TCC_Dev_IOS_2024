@@ -380,6 +380,118 @@ footer {
     background-color: rgb(27, 26, 26);
     text-decoration: none;
   }
+
+
+
+
+
+  /* Estilos para o card de produto */
+.produto {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    width: 250px; /* Tamanho proporcional do card */
+}
+
+.produto:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 1px solid #ccc;
+}
+
+.produto-info {
+    padding: 10px;
+}
+
+.produto-nome {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.produto-preco {
+    font-size: 1rem;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.btn-adicionar {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-adicionar:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* Estilos para o filtro de produtos */
+#filterSection {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#filterSection h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Estilos para os botões de filtro por marca */
+#filterSection button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#filterSection button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para o controle de faixa de preço */
+#priceFilter {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#priceFilter label {
+    margin-right: 10px;
+}
+
+#priceRange {
+    width: 100%;
+    margin-right: 10px;
+}
+
+#priceValue {
+    font-size: 0.9rem;
+    color: #888;
+}
+
   
 
 

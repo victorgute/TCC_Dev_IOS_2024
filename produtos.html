@@ -27,34 +27,19 @@
     <main>
       <div id="contentWrapper">
         <div id="filterSection">
-            <h1>Produtos</h1>
-            <!-- Campo de pesquisa -->
-            <div class="search-wrapper">
-              <input type="text" id="searchInput" placeholder="Pesquisar produtos..." oninput="searchProducts()" />
-            </div>
+          <h1>Produtos</h1>
           
-            <!-- Seletor de categoria de produto -->
-            <div class="category-selector">
-              <label for="categorySelect">Escolher categoria:</label>
-              <select id="categorySelect" onchange="updateCategory()">
-                <option value="fontes">Fontes</option>
-                <option value="monitores">Monitores</option>
-                <!-- Adicione mais opções de categorias aqui -->
-              </select>
-            </div>
+          <!-- Filtro por marca -->
+          <button onclick="filtrarPorMarca('todos')">Todos</button>
+          <button onclick="filtrarPorMarca('Marca A')">Marca A</button>
+          <button onclick="filtrarPorMarca('Marca B')">Marca B</button>
           
-            <!-- Filtro de preço -->
-            <div class="price-filter">
-              <label for="priceRange">Filtrar por preço:</label>
-              <input type="range" id="priceRange" min="0" max="9000" step="100" value="9000" oninput="updatePriceFilter(this.value)" />
-              <span id="priceValue">Até R$9000</span>
-            </div>
-          
-            <button id="filterButton" onclick="toggleFilter()">Filtro</button>
-            <div id="filter">
-              <!-- Filtro de marcas será gerado aqui -->
-            </div>
-        </div>
+          <!-- Filtro por preço -->
+          <input type="range" id="priceRange" min="0" max="9000" step="100" value="9000" oninput="updatePriceFilter(this.value)" />
+          <span id="priceValue">Até R$9000</span>
+          <button onclick="filtrarPorPreco(0, 9000)">Filtrar por Preço</button>
+      </div>
+      
           
         <div id="mainContent">
           <div id="topButtons">
@@ -75,12 +60,36 @@
               </div>
             </div>
           </div>
-          <div id="productsList" class="product-grid">
-            <!-- Lista de produtos será gerada aqui -->
+
+          
+            <div id="productsList" class="product-grid">
+              <div class="produto" data-marca="Marca " data-preco="100">
+                  <img src="img/fontes/font1.jpg" alt="Produto 1">
+                  <div class="produto-info">
+                      <h3 class="produto-nome">AEROCOOL KCAS FULL RANGE, 700W, 80 PLUS BRONZE</h3>
+                      <p class="produto-preco">R$ 100,00</p>
+                      <button class="btn-adicionar" onclick="adicionarAoCarrinho('Produto 1', 100, 'produto1.jpg')">Adicionar ao Carrinho</button>
+                  </div>
+              </div>
+              <div class="produto" data-marca="Marca A" data-preco="100">
+                <img src="img/fontes/font1.jpg" alt="Produto 1">
+                <div class="produto-info">
+                    <h3 class="produto-nome">AEROCOOL KCAS FULL RANGE, 700W, 80 PLUS BRONZE</h3>
+                    <p class="produto-preco">R$ 100,00</p>
+                    <button class="btn-adicionar" onclick="adicionarAoCarrinho('Produto 1', 100, 'produto1.jpg')">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+              <!-- Adicione mais produtos conforme necessário -->
           </div>
+            
+        </div>
         </div>
       </div>
     </main>
+
+  
+  
+
     <footer>
         <div class="atendimento">
           <div class="rodape-grid">
@@ -179,6 +188,6 @@
           </small>
         </div>
       </footer>
-    <script src="JS/produtos.js"></script>
+    <script src="JS/produto.js"></script>
   </body>
 </html>
