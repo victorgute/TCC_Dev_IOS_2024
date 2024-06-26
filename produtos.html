@@ -35,7 +35,7 @@
           <button onclick="filtrarPorMarca('Marca B')">Marca B</button>
           
           <!-- Filtro por preço -->
-          <input type="range" id="priceRange" min="0" max="9000" step="100" value="9000" oninput="updatePriceFilter(this.value)" />
+          <input type="range" id="priceRange" min="0" max="9000" step="100" value="9000" oninput="updatePriceFilter(this.value)"/>
           <span id="priceValue">Até R$9000</span>
           <button onclick="filtrarPorPreco(0, 9000)">Filtrar por Preço</button>
       </div>
@@ -63,7 +63,7 @@
 
           
             <div id="productsList" class="product-grid">
-              <div class="produto" data-marca="Marca " data-preco="100">
+              <div class="produto" data-marca="Marca B" data-preco="100">
                   <img src="img/fontes/font1.jpg" alt="Produto 1">
                   <div class="produto-info">
                       <h3 class="produto-nome">AEROCOOL KCAS FULL RANGE, 700W, 80 PLUS BRONZE</h3>
