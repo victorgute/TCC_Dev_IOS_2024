@@ -1,11 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reciclagem</title>
-</head>
-<body>
-    
-</body>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="">
+    <title>NanoNexus</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Formulário de Reciclagem de Peças Eletrônicos</h1>
+
+      <form id="recycling-form">
+        <fieldset>
+          <legend>Dados Pessoais</legend>
+          <label for="name">Nome Completo:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="address">Endereço:</label>
+          <input type="text" name="address" id="address" required />
+
+          <label for="phone">Telefone:</label>
+          <input type="tel" id="phone" name="phone" required />
+
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required />
+        </fieldset>
+        <fieldset>
+          <legend>Informações sobre o Equipamento</legend>
+          <label for="equipament-type">Tipo de Equipamento:</label>
+          <select name="equipament-type" id="equipament-type" required>
+            <option value="monitores">Monitores</option>
+            <option value="Fontes">Fontes</option>
+            <option value="Dis. Armazenamento">Dis. Armazenamento</option>
+            <option value="Baterias">Baterias</option>
+            <option value="Outros">Outros</option>
+          </select>
+          <label for="brand">Marca:</label>
+          <input type="text" name="brand" id="brand" required>
+          <label for="model">Modelo:</label>
+          <input type="text" name="model" id="model">
+        </fieldset>
+        <fieldset>
+          <legend>Estado de Funcionamento</legend>
+          <label>Funciona?</label>
+          <input type="radio" id="works-yes" name="works" value="sim" required>
+          <label for="works-yes">Sim.</label>
+          <input type="radio" id="works-no" name="works" value="não" required>
+          <label for="works-no">Não.</label>
+          <label for="problem">Se não, qual é o problema principal?</label>
+          <input type="text" name="problem" id="problem">
+        </fieldset>
+        <fieldset>
+           <legend>Componentes a Serem Reciclados</legend>
+           <label><input type="checkbox" name="components" id="placa-mãe">Placa-mãe.</label>
+           <label><input type="checkbox" name="components" id="processador">Processador.</label>
+           <label><input type="checkbox" name="components" id="memória Ram">Memória Ram.</label>
+           <label><input type="checkbox" name="components" id="bateria">Bateria.</label>
+           <label><input type="checkbox" name="components" id="gabinete">Gabinete.</label>
+           <label for="other-components">Outros.</label>
+           <input type="text" name="other-components" id="other-components">
+        </fieldset>
+      </form>
+    </div>
+
+    <script type="text/javascript" src="JS/main.js"></script>
+  </body>
 </html>
