@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/CSS/reciclagem.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -16,61 +17,108 @@
   </head>
   <body>
     <div class="container">
-      <h1>Formulário de Reciclagem de Peças Eletrônicos</h1>
-
+      <h1>Formulário de Reciclagem de Peças Eletrônicas</h1>
       <form id="recycling-form">
-        <fieldset>
-          <legend>Dados Pessoais</legend>
-          <label for="name">Nome Completo:</label>
-          <input type="text" id="name" name="name" required />
-
-          <label for="address">Endereço:</label>
-          <input type="text" name="address" id="address" required />
-
-          <label for="phone">Telefone:</label>
-          <input type="tel" id="phone" name="phone" required />
-
-          <label for="email">E-mail:</label>
-          <input type="email" id="email" name="email" required />
-        </fieldset>
-        <fieldset>
-          <legend>Informações sobre o Equipamento</legend>
-          <label for="equipament-type">Tipo de Equipamento:</label>
-          <select name="equipament-type" id="equipament-type" required>
-            <option value="monitores">Monitores</option>
-            <option value="Fontes">Fontes</option>
-            <option value="Dis. Armazenamento">Dis. Armazenamento</option>
-            <option value="Baterias">Baterias</option>
-            <option value="Outros">Outros</option>
-          </select>
-          <label for="brand">Marca:</label>
-          <input type="text" name="brand" id="brand" required>
-          <label for="model">Modelo:</label>
-          <input type="text" name="model" id="model">
-        </fieldset>
-        <fieldset>
-          <legend>Estado de Funcionamento</legend>
-          <label>Funciona?</label>
-          <input type="radio" id="works-yes" name="works" value="sim" required>
-          <label for="works-yes">Sim.</label>
-          <input type="radio" id="works-no" name="works" value="não" required>
-          <label for="works-no">Não.</label>
-          <label for="problem">Se não, qual é o problema principal?</label>
-          <input type="text" name="problem" id="problem">
-        </fieldset>
-        <fieldset>
-           <legend>Componentes a Serem Reciclados</legend>
-           <label><input type="checkbox" name="components" id="placa-mãe">Placa-mãe.</label>
-           <label><input type="checkbox" name="components" id="processador">Processador.</label>
-           <label><input type="checkbox" name="components" id="memória Ram">Memória Ram.</label>
-           <label><input type="checkbox" name="components" id="bateria">Bateria.</label>
-           <label><input type="checkbox" name="components" id="gabinete">Gabinete.</label>
-           <label for="other-components">Outros.</label>
-           <input type="text" name="other-components" id="other-components">
-        </fieldset>
+          <fieldset>
+              <legend>Dados Pessoais</legend>
+              <label for="name">Nome Completo:</label>
+              <input type="text" id="name" name="name" required>
+              <label for="address">Endereço:</label>
+              <input type="text" id="address" name="address" required>
+              <label for="phone">Telefone:</label>
+              <input type="tel" id="phone" name="phone" required>
+              <label for="email">E-mail:</label>
+              <input type="email" id="email" name="email" required>
+          </fieldset>
+          <fieldset>
+              <legend>Informações sobre o Equipamento</legend>
+              <label for="equipment-type">Tipo de Equipamento:</label>
+              <select id="equipment-type" name="equipment-type" required>
+                  <option value="computador">Computador</option>
+                  <option value="celular">Celular</option>
+                  <option value="tablet">Tablet</option>
+                  <option value="impressora">Impressora</option>
+                  <option value="outro">Outro</option>
+              </select>
+              <label for="brand">Marca:</label>
+              <input type="text" id="brand" name="brand" required>
+              <label for="model">Modelo:</label>
+              <input type="text" id="model" name="model" required>
+              <label for="year">Ano de Fabricação:</label>
+              <input type="number" id="year" name="year" required>
+          </fieldset>
+          <fieldset>
+              <legend>Estado do Equipamento</legend>
+              <label>Funciona?</label>
+              <input type="radio" id="works-yes" name="works" value="sim" required>
+              <label for="works-yes">Sim</label>
+              <input type="radio" id="works-no" name="works" value="não" required>
+              <label for="works-no">Não</label>
+              <label for="problem">Se não, qual é o problema principal?</label>
+              <input type="text" id="problem" name="problem">
+          </fieldset>
+          <fieldset>
+              <legend>Componentes a Serem Reciclados</legend>
+              <label><input type="checkbox" name="components" value="placa-mãe"> Placa Mãe</label>
+              <label><input type="checkbox" name="components" value="processador"> Processador</label>
+              <label><input type="checkbox" name="components" value="memória-ram"> Memória RAM</label>
+              <label><input type="checkbox" name="components" value="disco-rígido"> Disco Rígido/SSD</label>
+              <label><input type="checkbox" name="components" value="bateria"> Bateria</label>
+              <label><input type="checkbox" name="components" value="carcaça"> Carcaça</label>
+              <label for="other-components">Outros:</label>
+              <input type="text" id="other-components" name="other-components">
+          </fieldset>
+          <fieldset>
+              <legend>Dados de Uso</legend>
+              <label for="usage-time">Tempo de uso aproximado:</label>
+              <select id="usage-time" name="usage-time" required>
+                  <option value="menos-de-1-ano">Menos de 1 ano</option>
+                  <option value="1-3-anos">1-3 anos</option>
+                  <option value="3-5-anos">3-5 anos</option>
+                  <option value="mais-de-5-anos">Mais de 5 anos</option>
+              </select>
+              <label for="environment">Este equipamento foi usado em ambiente:</label>
+              <select id="environment" name="environment" required>
+                  <option value="doméstico">Doméstico</option>
+                  <option value="comercial">Comercial</option>
+                  <option value="industrial">Industrial</option>
+                  <option value="outro">Outro</option>
+              </select>
+          </fieldset>
+          <fieldset>
+              <legend>Destino Final do Equipamento</legend>
+              <label>Pretende doar ou vender?</label>
+              <input type="radio" id="donate" name="final-destination" value="doar" required>
+              <label for="donate">Doar</label>
+              <input type="radio" id="sell" name="final-destination" value="vender" required>
+              <label for="sell">Vender</label>
+              <label for="estimated-value">Se pretende vender, qual o valor estimado?</label>
+              <input type="number" id="estimated-value" name="estimated-value">
+          </fieldset>
+          <fieldset>
+              <legend>Conscientização e Feedback</legend>
+              <label>Você tem conhecimento sobre a importância da reciclagem de eletrônicos?</label>
+              <input type="radio" id="awareness-yes" name="awareness" value="sim" required>
+              <label for="awareness-yes">Sim</label>
+              <input type="radio" id="awareness-no" name="awareness" value="não" required>
+              <label for="awareness-no">Não</label>
+              <label>Já reciclou eletrônicos antes?</label>
+              <input type="radio" id="recycled-before-yes" name="recycled-before" value="sim" required>
+              <label for="recycled-before-yes">Sim</label>
+              <input type="radio" id="recycled-before-no" name="recycled-before" value="não" required>
+              <label for="recycled-before-no">Não</label>
+              <label for="suggestions">Tem alguma sugestão para melhorar nosso processo de reciclagem?</label>
+              <input type="text" id="suggestions" name="suggestions">
+          </fieldset>
+          <fieldset>
+              <legend>Autorização</legend>
+              <label>Autorizo a coleta e o processamento dos dados fornecidos neste formulário para fins de reciclagem de peças eletrônicas.</label>
+              <input type="checkbox" id="authorization" name="authorization" required>
+              <label for="authorization">Sim</label>
+          </fieldset>
+          <button type="submit">Enviar</button>
       </form>
-    </div>
-
-    <script type="text/javascript" src="JS/main.js"></script>
-  </body>
+  </div>
+  <script src="/JS/reciclagem.js"></script>
+</body>
 </html>
