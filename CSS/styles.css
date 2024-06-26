@@ -145,7 +145,7 @@ header {
   margin-bottom: 1rem;
   display: flex;
   flex-direction: column;
-  margin-left: 60px;
+  margin-left: 30px;
 }
 
 .atendimento-3 p{
@@ -449,6 +449,11 @@ section .Categorias{
   }
   .cols-4{
     grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+
+  .product{
+    margin: 10px;
   }
 
   .product-name, .product-price .rate{
