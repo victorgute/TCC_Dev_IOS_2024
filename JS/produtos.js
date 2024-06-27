@@ -13,3 +13,35 @@ function adicionarAoCarrinho(nome, preco, imagem) {
     localStorage.setItem('carrinho', JSON.stringify(carrinho));
     window.location.href = 'carrinho.html';
 }
+
+
+// Função para filtrar por marca
+function filtrarPorMarca(marca) {
+    const produtos = document.querySelectorAll('.produto');
+    produtos.forEach(produto => {
+        const marcaProduto = produto.getAttribute('data-marca');
+        if (marca === 'todos' || marcaProduto === marca) {
+            produto.style.display = 'block';
+        } else {
+            produto.style.display = 'none';
+        }
+    });
+}
+
+// Função para filtrar por faixa de preço
+function filtrarPorPreco(min, max) {
+    const produtos = document.querySelectorAll('.produto');
+    produtos.forEach(produto => {
+        const precoProduto = parseInt(produto.getAttribute('data-preco'), 10);
+        if (precoProduto >= min && precoProduto <= max) {
+            produto.style.display = 'block';
+        } else {
+            produto.style.display = 'none';
+        }
+    });
+}
+
+// Função para atualizar valor de faixa de preço exibido dinamicamente
+function updatePriceFilter(value) {
+    document.getElementById('priceValue').textContent = `Até R$${value}`;
+}

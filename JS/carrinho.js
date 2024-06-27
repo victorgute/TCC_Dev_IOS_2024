@@ -1,19 +1,21 @@
 function carregarCarrinho() {
-    let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
-    console.log("Itens do carrinho:", carrinho); // Mensagem de depuração
+  let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+  console.log("Itens do carrinho:", carrinho); // Mensagem de depuração
 
-    let itensCarrinho = document.getElementById('itensCarrinho');
-    let totalCarrinho = document.getElementById('totalCarrinho');
-    let total = 0;
+  let itensCarrinho = document.getElementById("itensCarrinho");
+  let totalCarrinho = document.getElementById("totalCarrinho");
+  let total = 0;
 
-    itensCarrinho.innerHTML = '';
-    carrinho.forEach((item, index) => {
-        let itemTotal = item.preco * item.quantidade;
-        total += itemTotal;
+  itensCarrinho.innerHTML = "";
+  carrinho.forEach((item, index) => {
+    let itemTotal = item.preco * item.quantidade;
+    total += itemTotal;
 
-        itensCarrinho.innerHTML += `
+    itensCarrinho.innerHTML += `
             <div class="item-carrinho d-flex align-items-center mb-3">
-                <img src="${item.imagem}" alt="${item.nome}" width="100px" class="me-3">
+                <img src="${item.imagem}" alt="${
+      item.nome
+    }" width="100px" class="me-3">
                 <div>
                     <h3>${item.nome}</h3>
                     <p>Preço: R$ ${item.preco.toFixed(2)}</p>
@@ -26,37 +28,37 @@ function carregarCarrinho() {
                 </div>
             </div>
         `;
-    });
+  });
 
-    totalCarrinho.innerHTML = `<h2>Total: R$ ${total.toFixed(2)}</h2>`;
+  totalCarrinho.innerHTML = `<h2>Total: R$ ${total.toFixed(2)}</h2>`;
 }
 
 function aumentarQuantidade(index) {
-    let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
-    carrinho[index].quantidade += 1;
-    localStorage.setItem('carrinho', JSON.stringify(carrinho));
-    carregarCarrinho();
+  let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+  carrinho[index].quantidade += 1;
+  localStorage.setItem("carrinho", JSON.stringify(carrinho));
+  carregarCarrinho();
 }
 
 function diminuirQuantidade(index) {
-    let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
-    if (carrinho[index].quantidade > 1) {
-        carrinho[index].quantidade -= 1;
-    } else {
-        carrinho.splice(index, 1);
-    }
-    localStorage.setItem('carrinho', JSON.stringify(carrinho));
-    carregarCarrinho();
+  let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+  if (carrinho[index].quantidade > 1) {
+    carrinho[index].quantidade -= 1;
+  } else {
+    carrinho.splice(index, 1);
+  }
+  localStorage.setItem("carrinho", JSON.stringify(carrinho));
+  carregarCarrinho();
 }
 
 function voltarAsCompras() {
-    window.location.href = 'produtos.html';
+  window.location.href = "produtos.html";
 }
 
 function finalizarCompras() {
-    alert('Compra finalizada com sucesso!');
-    localStorage.removeItem('carrinho');
-    window.location.href = 'index.html';
+  alert("Compra finalizada com sucesso!");
+  localStorage.removeItem("carrinho");
+  window.location.href = "index.html";
 }
 
 window.onload = carregarCarrinho;
