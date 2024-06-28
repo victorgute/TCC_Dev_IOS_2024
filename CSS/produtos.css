@@ -139,6 +139,7 @@ header {
 }
 
 .product-grid {
+    padding-top: 2rem;
     display: flex;
     flex-wrap: wrap;
     gap: 20px; /* Space between products */
@@ -508,27 +509,60 @@ footer {
     font-size: 16px;
     border: none;
     cursor: pointer;
-    margin-top: 2rem;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    
 }
+
+.dropdown button:hover{
+    background-color: #3970af;
+    color: #ffffff;
+    transition: 0.5s;
+    
+}
+
+.icon-logo{
+    display: flex;
+}
+
+.icon-logo li{
+    padding-top: 5px;
+    font-size: 2.5rem;
+    text-decoration: none;
+    display: block;
+    margin-left: 72rem;
+    color: white;
+}
+
+.icon-logo li:hover{
+color: #4a90e1;
+}
+
+
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    color: rgb(0, 0, 0);
+    background-color: #000000;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    margin-left: 2rem;
+    border-radius: 5px;
 }
 
 .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
+    color: white;
+    padding: 15px 3.7rem;
     text-decoration: none;
     display: block;
+    border-radius: 5px;
 }
 
 .dropdown-content a:hover {
-    background-color: #f1f1f1;
+    background-color: white;
+    color: black;
 }
 
 .show {
