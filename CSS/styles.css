@@ -99,7 +99,7 @@ header {
 
 
 .main{
-  background-color:#ebebeb;
+  background-color:#ffffff;
 }
 
 
@@ -149,12 +149,17 @@ header {
 }
 .cols-4 img{
   max-width: 100%;
-  
+}
+
+.product img{
+  width: 800px;
+  padding-top: 5rem;
 }
 
 .cols-4{
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
+  
 }
 .cols>*{
   cursor: pointer;
@@ -189,12 +194,16 @@ header {
   display: flex;
   flex-direction: column;
   margin-left: 30px;
-  
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .product a{
   text-decoration: none;
   color: black;
+}
+
+.product-name{
+  padding-left: 2rem;
 }
 
 .atendimento-3 p{
@@ -211,10 +220,12 @@ i{display: flex;}
 .rate{
   color: #4a90e1;
   font-size: 1.3rem;
+  padding-left: 2rem;
 }
 
 .product-price span{
   font-weight: 600;
+  padding-left: 2rem;
 }
 
 .header-inner-content p{
@@ -604,6 +615,10 @@ section .Categorias{
 
   .product{
     margin: 10px;
+    
+  }
+  .product img{
+    padding-top: 1rem;
   }
 
   .product-name, .product-price .rate{
