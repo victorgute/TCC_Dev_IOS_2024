@@ -45,3 +45,69 @@ function filtrarPorPreco(min, max) {
 function updatePriceFilter(value) {
     document.getElementById('priceValue').textContent = `Até R$${value}`;
 }
+
+
+// Função para filtrar por nome
+function filtrarPorNome() {
+    const input = document.getElementById('searchInput').value.toLowerCase();
+    const produtos = document.querySelectorAll('.produto');
+    produtos.forEach(produto => {
+        const nomeProduto = produto.querySelector('.produto-nome').textContent.toLowerCase();
+        if (nomeProduto.includes(input)) {
+            produto.style.display = 'block';
+        } else {
+            produto.style.display = 'none';
+        }
+    });
+}
+
+// Função para abrir/fechar o dropdown
+function toggleDropdown() {
+    document.getElementById("dropdownMenu").classList.toggle("show");
+}
+
+// Função para filtrar por marca
+function filtrarPorMarca(marca) {
+    const produtos = document.querySelectorAll('.produto');
+    produtos.forEach(produto => {
+        if (marca === 'todos' || produto.getAttribute('data-marca') === marca) {
+            produto.style.display = 'block';
+        } else {
+            produto.style.display = 'none';
+        }
+    });
+    // Fechar o dropdown após selecionar uma categoria
+    toggleDropdown();
+}
+
+// Função para filtrar por nome
+function filtrarPorNome() {
+    const input = document.getElementById('searchInput').value.toLowerCase();
+    const produtos = document.querySelectorAll('.produto');
+    produtos.forEach(produto => {
+        const nome = produto.querySelector('.produto-nome').textContent.toLowerCase();
+        if (nome.includes(input)) {
+            produto.style.display = 'block';
+        } else {
+            produto.style.display = 'none';
+        }
+    });
+}
+
+// Função para atualizar o filtro de preço
+function updatePriceFilter(value) {
+    document.getElementById('priceValue').textContent = `Até R$${value}`;
+}
+
+// Função para filtrar por preço
+function filtrarPorPreco(min, max) {
+    const produtos = document.querySelectorAll('.produto');
+    produtos.forEach(produto => {
+        const preco = parseFloat(produto.getAttribute('data-preco'));
+        if (preco >= min && preco <= max) {
+            produto.style.display = 'block';
+        } else {
+            produto.style.display = 'none';
+        }
+    });
+}

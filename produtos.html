@@ -26,44 +26,27 @@
       </nav>
     </header>
     <main>
-      <div id="contentWrapper">
-        <div id="filterSection">
-          <input type="text" id="searchInput" placeholder="Pesquisar por nome..." oninput="filtrarPorNome()">
-          
-          <h1>Produtos</h1>
-          
-          <button onclick="filtrarPorMarca('todos')">Todos</button>
-          <button onclick="filtrarPorMarca('Marca B')">Monitores</button>
-          <button onclick="filtrarPorMarca('Marca A')">Fontes</button>
-          <button onclick="filtrarPorMarca('Marca B')">Mouses</button>
-          <button onclick="filtrarPorMarca('Marca B')">Headsets</button>
-          <button onclick="filtrarPorMarca('Marca B')">Notebooks</button>
-          <button onclick="filtrarPorMarca('Marca B')">Cadeiras</button>
-          <button onclick="filtrarPorMarca('Marca B')">Placa Mãe</button>
-          <button onclick="filtrarPorMarca('Marca B')">Teclados</button>
-          <button onclick="filtrarPorMarca('Marca B')">Gabinetes</button>
-          <button onclick="filtrarPorMarca('Marca B')">Controles</button>
-        </div>
+      <div id="contentWrapper" class="itens">
+
+        <div class="dropdown">
+          <button class="dropdown-btn" onclick="toggleDropdown()">Filtrar por Categoria ↓</button>
+          <div class="dropdown-content" id="dropdownMenu">
+              <a href="#" onclick="filtrarPorMarca('todos')">Todos</a>
+              <a href="#" onclick="filtrarPorMarca('Marca B')">Monitores</a>
+              <a href="#" onclick="filtrarPorMarca('Marca A')">Fontes</a>
+              <a href="#" onclick="filtrarPorMarca('Marca B')">Mouses</a>
+              <a href="#" onclick="filtrarPorMarca('Marca B')">Headsets</a>
+              <a href="#" onclick="filtrarPorMarca('Marca B')">Notebooks</a>
+              <a href="#" onclick="filtrarPorMarca('Marca B')">Cadeiras</a>
+              <a href="#" onclick="filtrarPorMarca('Marca B')">Placa Mãe</a>
+              <a href="#" onclick="filtrarPorMarca('Marca B')">Teclados</a>
+              <a href="#" onclick="filtrarPorMarca('Marca B')">Gabinetes</a>
+              <a href="#" onclick="filtrarPorMarca('Marca B')">Controles</a>
+          </div>
+      </div>
+      
 
         <div id="mainContent">
-          <div id="topButtons">
-            <div id="productCount">
-              <!-- Contagem de produtos será atualizada aqui -->
-            </div>
-            <div class="dropdown">
-              <button class="dropbtn">Ordenar</button>
-              <div class="dropdown-content">
-                <a href="#" onclick="sortProductsAZ()">Ordenar A-Z</a>
-                <a href="#" onclick="sortProductsZA()">Ordenar Z-A</a>
-                <a href="#" onclick="sortPriceLowToHigh()"
-                  >Preço: Menor <br>para Maior</a
-                >
-                <a href="#" onclick="sortPriceHighToLow()"
-                  >Preço: Maior <br>para Menor</a
-                >
-              </div>
-            </div>
-          </div>
 
           
             <div id="productsList" class="product-grid">
@@ -78,7 +61,7 @@
               <div class="produto" data-marca="Marca A" data-preco="100">
                 <img src="img/fontes/font10.jpg" alt="Produto 1">
                 <div class="produto-info">
-                    <h3 class="produto-nome">AEROCOOL KCAS FULL RANGE, 700W, 80 PLUS BRONZE</h3>
+                    <h3 class="produto-nome">victorgute Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcodi!</h3>
                     <p class="produto-preco">R$ 100,00</p>
                     <button class="btn-adicionar" onclick="adicionarAoCarrinho('PAEROCOOL KCAS FULL RANGE, 700W, 80 PLUS BRONZE', 100, 'img/fontes/font10.jpg')">Adicionar ao Carrinho</button>
                 </div>
@@ -152,7 +135,7 @@
             </div>
           </div>
         </main>
-
+</div>
         <footer>
           <div class="atendimento">
             <div class="rodape-grid">

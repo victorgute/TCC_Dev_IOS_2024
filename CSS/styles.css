@@ -464,6 +464,10 @@ section .Categorias{
   line-height: 2rem;
 }
 
+.lançamento{
+  text-decoration: underline;
+}
+
 .testimonial p:last-child{
   font-weight: bold;
 }
@@ -476,6 +480,8 @@ section .Categorias{
 .ps5 button{
   margin: 0;
 }
+
+
 
 
 
@@ -536,7 +542,7 @@ section .Categorias{
   }
 
   .ps5 p{
-    display: flex;
+    display: block;
   }
 
 
