@@ -87,8 +87,9 @@ header {
 
 
 
-.item{
+.item a{
   display: flex;
+  gap: 10px;
 }
 
 .item :hover {
