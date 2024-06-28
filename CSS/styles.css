@@ -469,6 +469,15 @@ section .Categorias{
 }
 
 
+.ps5 p{
+  padding: 0;
+}
+
+.ps5 button{
+  margin: 0;
+}
+
+
 
 
 @media (max-width: 800px){
@@ -520,6 +529,14 @@ section .Categorias{
 
   .header-button-size-right img{
     width: 28rem;
+  }
+
+  .ps5 button{
+    margin-left:5rem;
+  }
+
+  .ps5 p{
+    display: flex;
   }
 
 
