@@ -491,6 +491,9 @@ section .Categorias{
   .header-button-size{
     flex-direction: column;
     text-align: center;
+    padding-bottom: 2rem;
+    padding-top:2rem;
+
   }
   .tres-pontos{
     display: flex;
@@ -503,11 +506,13 @@ section .Categorias{
 
  .header-inner-content h5{
   padding-left: 0px;
+  font-size: 2rem;
   }
 
   .header-inner-content h3{
     font-size: 30px;
     padding-left: 0;
+    font-size: 2rem;
   }
 
   .header-inner-content p{
@@ -525,7 +530,7 @@ section .Categorias{
   }
 
   .header-button-size-left button{
-    margin-left: 0;
+    margin-left: 1rem;
     padding: 1rem 3rem;
     
   }
@@ -535,7 +540,7 @@ section .Categorias{
   }
 
   .header-button-size-right img{
-    width: 28rem;
+    width: 24rem;
   }
 
   .ps5 button{

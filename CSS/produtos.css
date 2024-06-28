@@ -539,6 +539,28 @@ color: #4a90e1;
 }
 
 
+/* CSS para a barra de pesquisa */
+.search-bar-container {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px;
+    padding: 10px 50px;
+  }
+  .search-bar {
+    width: 80rem;
+    padding: 10px 0px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .search-bar:focus {
+    border-color: #007bff;
+  }
+  
+
 
 .dropdown-content {
     display: none;
@@ -631,7 +653,31 @@ color: #4a90e1;
         text-align: center;
         margin: 0px;
       }
+      .icon-logo ul li{
+        padding: 0;
+        padding-top: 10px;
+        margin-left: 10rem;
+      }
+
+.pesquisar {
+    padding: 0rem;
+    background-color: #000000;
 }
+
+
+      header{
+        padding-bottom: 0;
+      }
+
+      .dropdown{
+        padding-left: 5rem;
+      }
+      .product-grid{
+        padding-left: 4rem;
+      }
+}
+
+
 
 @media (max-width: 480px) {
     .product {

@@ -40,10 +40,17 @@
 
     <main>
       <div id="contentWrapper" class="itens">
+        
+        
+        
 
         <div class="dropdown">
-          <button class="dropdown-btn" onclick="toggleDropdown()">Filtrar por Categoria ↓</button>
+          
+          <div class="search-bar-container">
+          <input type="text" class="search-bar" id="searchBar" placeholder="Pesquisar produtos..." onkeyup="filtrarProdutosPorNome()" />
+        </div><button class="dropdown-btn" onclick="toggleDropdown()">Filtrar por Categoria ↓</button>
           <div class="dropdown-content" id="dropdownMenu">
+            
               <a href="#" onclick="filtrarPorMarca('todos')">Todos</a>
               <a href="#" onclick="filtrarPorMarca('Marca B')">Monitores</a>
               <a href="#" onclick="filtrarPorMarca('Marca A')">Fontes</a>
