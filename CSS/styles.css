@@ -12,6 +12,33 @@ header {
   background-color:  #b5b5b5;
 }
 
+.navba {
+  display: flex;
+  gap: 30px;
+}
+
+.navba ul {
+  display: flex;
+  gap: 30px;
+  padding-top: 30px;
+  padding-left: 750px;
+}
+.navba ul li{
+  text-decoration: none;
+  display: flex;
+}
+
+
+.navba a{
+  text-decoration: none;
+  color: white;
+}
+
+.navba img{
+  padding-top: 10px;
+}
+
+
 .menu-principal {
   background-color: black;
   padding: 10px 20px;
@@ -29,10 +56,7 @@ header {
   display: flex;
 }
 
-.navbar img .tresbarras {
-  display: none;
-  cursor: pointer;
-}
+
 
 
 .navbar ul {
@@ -43,17 +67,15 @@ header {
   gap: 20px;
 }
 
-.navbar ul li {
-  display: inline;
-}
 
-.navbar a {
+
+.navba a {
   text-decoration: none;
   color: white;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
-.navbar a:hover {
-  color: rgb(95, 135, 245);
+.navba a:hover {
+  color:  #4a90e1;
 }
 
 .ajuda-nav{
@@ -63,15 +85,9 @@ header {
 
 
 
-.navbar .logomarca {
-  display: flex;
-  align-items: center;
-}
 
-.navbar{
-  display: flex;
-  align-items: center;
-}
+
+
 
 .item :hover {
   transform: translateY(-2px);
@@ -95,6 +111,16 @@ header {
 .page-inner-content{
   max-width: 1280px;
   margin: 0 auto;
+}
+
+.page-inner-content h1{
+  padding-top: 20px;
+  color:  white;
+}
+
+
+.lançamento{
+  padding-left: 4rem;
 }
 
 .cols{
@@ -137,10 +163,14 @@ header {
   font-size: 1.8rem;
 }
 
+.phone{
+  color: white;
+}
+
 .subtitle-underline{
   width: 100px;
   height: 5px;
-  background-color: rgb(95, 135, 245);
+  background-color:  #4a90e1;
   border-radius: 9999px;
   margin: 8px auto 0 auto;
 }
@@ -171,12 +201,30 @@ i{display: flex;}
 }
 
 .rate{
-  color:rgb(95, 135, 245);
+  color: #4a90e1;
   font-size: 1.3rem;
 }
 
 .product-price span{
   font-weight: 600;
+}
+
+.header-inner-content p{
+  padding-left: 4rem;
+  font-size: 20px;
+}
+
+.header-inner-content h5{
+  display: flex;
+  padding-left: 8.8rem;
+  font-size: 20px;
+  font-size: 1.5rem;
+  color: #4a90e1;
+}
+
+.header-inner-content h3{
+  padding-left: 4rem;
+  font-size: 1.8rem;
 }
 
 
@@ -185,8 +233,10 @@ i{display: flex;}
   display: flex;
   align-items: center;
   justify-self: center;
-  padding: 1rem;
+  padding: 5rem 10rem;
 }
+
+
 .header-button-size-left {
   height: 100%;
   flex-basis: 50%;
@@ -202,8 +252,10 @@ i{display: flex;}
   margin-bottom: 1.5rem;
 }
 
+
 .header-button-size-left button {
-  background-color: rgb(95, 135, 245);
+  background-color: #4a90e1;
+  margin-left: 150px;
   border: none;
   cursor: pointer;
   padding: 0.8rem 3.8rem;
@@ -222,6 +274,7 @@ i{display: flex;}
   display: flex;
   flex-basis: 50%;
   align-items: center;
+  padding-bottom: 1rem;
 }
 
 .header-button-size-right img {
@@ -404,7 +457,7 @@ section .Categorias{
 .testimonial p:first-child{
   font-weight: bold;
   font-size: 5rem;
-  color: rgb(95, 135, 245);
+  color:  #4a90e1;
   margin: 3rem;
   line-height: 2rem;
 }
@@ -425,19 +478,32 @@ section .Categorias{
     display: flex;
     margin: 0px;
   }
-  .item-navbar-ajuda{
-    display: none;
+
+  .menu-principal{
+    padding: 0;
   }
-  .item-navbar-favoritos{
-    display: none;
-  }
+
+
   .item{
     display: flex;
   }
-  .navbar{
+  .navba{
     display: flex;
     margin: 0px;
     padding: 0px;
+    gap: 0;
+  }
+
+  .navba ul{
+    padding: 0;
+    padding-top: 40px;
+    gap: 10px;
+    
+    
+  }
+  .navba ul li{
+   padding-left: 10px;
+   font-size: 10px;
   }
 
   .menu-principal ul{
@@ -446,7 +512,8 @@ section .Categorias{
   }
 
   .logomarca img{
-    width: 4rem;
+    padding-top: 15px;
+    width: 5rem;
   }
 
   .section-title{
