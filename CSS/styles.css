@@ -120,6 +120,11 @@ header {
   color:  white;
 }
 
+.page-inner-content h1{
+  padding-top: 20px;
+  color:  white;
+}
+
 
 .lançamento{
   padding-left: 4rem;

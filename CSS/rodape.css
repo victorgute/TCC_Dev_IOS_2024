@@ -2,6 +2,12 @@
   padding: 0;
   margin: 0;
 }
+.icon-logo {
+  background-color: black;
+  padding-left: 46%;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
 
 body {
   background-color: black;
@@ -71,12 +77,6 @@ h5 {
   font-size: 20px;
 }
 
-.icon-logo {
-  background-color: black;
-  padding-left: 46%;
-  padding-bottom: 10px;
-  padding-top: 10px;
-}
 
 .rodape-grid {
   display: flex;
