@@ -21,7 +21,7 @@ header {
   display: flex;
   gap: 30px;
   padding-top: 30px;
-  padding-left: 750px;
+  padding-left: 700px;
 }
 .navba ul li{
   text-decoration: none;
@@ -87,7 +87,9 @@ header {
 
 
 
-
+.item{
+  display: flex;
+}
 
 .item :hover {
   transform: translateY(-2px);
@@ -483,10 +485,45 @@ section .Categorias{
     padding: 0;
   }
 
+ .header-inner-content h5{
+  padding-left: 0px;
+  }
 
-  .item{
+  .header-inner-content h3{
+    font-size: 30px;
+    padding-left: 0;
+  }
+
+  .header-inner-content p{
+    padding-left: 0px;
+    display: none;
+  }
+
+  .header-inner-content a{
+    padding-left: 0px;
     display: flex;
   }
+
+  .item a{
+    gap: 5px;
+  }
+
+  .header-button-size-left button{
+    margin-left: 0;
+    padding: 1rem 3rem;
+    
+  }
+
+  .header-button-size-left a{
+    text-decoration: none;
+  }
+
+  .header-button-size-right img{
+    width: 28rem;
+  }
+
+
+
   .navba{
     display: flex;
     margin: 0px;
@@ -512,8 +549,8 @@ section .Categorias{
   }
 
   .logomarca img{
-    padding-top: 15px;
-    width: 5rem;
+    padding-top: 25px;
+    width: 4rem;
   }
 
   .section-title{
@@ -543,6 +580,7 @@ section .Categorias{
   .exclusive-container{
     flex-direction: column-reverse;
   }
+
 
   .testimonials{
     flex-direction: column;
