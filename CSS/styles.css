@@ -92,7 +92,7 @@ header {
   gap: 10px;
 }
 
-.item :hover {
+.item a:hover {
   transform: translateY(-2px);
   transition: all 0.2s;
 }
