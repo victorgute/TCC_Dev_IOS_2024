@@ -1,5 +1,6 @@
+// Função para adicionar item ao carrinho
 function adicionarAoCarrinho(nome, preco, imagem) {
-    console.log("Adicionando ao carrinho:", { nome, preco, imagem }); // Mensagem de depuração
+    console.log("Adicionando ao carrinho:", { nome, preco, imagem });
 
     let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
 
@@ -11,9 +12,24 @@ function adicionarAoCarrinho(nome, preco, imagem) {
     }
 
     localStorage.setItem('carrinho', JSON.stringify(carrinho));
-    window.location.href = 'carrinho.html';
+    atualizarCarrinhoQuantidade();
 }
 
+// Função para atualizar o contador de itens no carrinho
+function atualizarCarrinhoQuantidade() {
+    let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+    const carrinhoQuantidade = document.getElementById('carrinho-quantidade');
+    let totalItens = carrinho.reduce((total, item) => total + item.quantidade, 0);
+    carrinhoQuantidade.textContent = totalItens;
+}
+
+// Função para carregar a quantidade de itens no carrinho ao carregar a página
+function carregarQuantidadeCarrinho() {
+    atualizarCarrinhoQuantidade();
+}
+
+// Chamar a função ao carregar a página
+document.addEventListener('DOMContentLoaded', carregarQuantidadeCarrinho);
 
 // Função para filtrar por marca
 function filtrarPorMarca(marca) {
@@ -45,7 +61,6 @@ function filtrarPorPreco(min, max) {
 function updatePriceFilter(value) {
     document.getElementById('priceValue').textContent = `Até R$${value}`;
 }
-
 
 // Função para filtrar por nome
 function filtrarPorNome() {
