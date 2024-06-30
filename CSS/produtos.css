@@ -904,6 +904,21 @@ footer {
       .product-grid{
         padding-left: 4rem;
       }
+
+
+      .carrinho-container i{
+        padding-left: 12rem;
+        padding-top: 1rem;
+        margin-top: 5px;
+      }
+
+      .carrinho-container span{
+        margin-top: 5px;
+      }
+
+      .icon-logo img{
+        padding-bottom: 15px;
+      }
 }
 
 

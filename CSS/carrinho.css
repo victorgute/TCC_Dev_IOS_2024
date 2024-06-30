@@ -39,7 +39,9 @@ body {
     padding-top: 10px;
   }
 
-
+.d-flex{
+    padding-bottom:3rem;
+}
 
   #freteCalculadora {
     margin-top: 20px;
