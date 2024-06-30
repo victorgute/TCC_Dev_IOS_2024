@@ -557,9 +557,8 @@ footer {
 
 .icon-logo img{
     padding-top: 10px;
-
+  
 }
-
 .icon-logo li{
     padding-top: 5px;
     font-size: 2.5rem;
@@ -771,7 +770,7 @@ footer {
     color: white;
     padding-top: 1rem;
     font-size: 2.5rem;
-    padding-left: 74rem;
+    padding-left: 70rem;
   }
 
   .carrinho-container i:hover{
@@ -820,7 +819,10 @@ footer {
     }
   }
   
-
+  .carrinho-container span{
+    margin-top: 5px;
+    background-color: red;
+  }
 
 
 
@@ -914,6 +916,7 @@ footer {
 
       .carrinho-container span{
         margin-top: 5px;
+        
       }
 
       .icon-logo img{
