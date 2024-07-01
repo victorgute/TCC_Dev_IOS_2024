@@ -808,6 +808,23 @@ footer {
       text-align: center;
       margin: 0px;
     }
+
+    .icon-logo {
+      padding: 0;
+      margin-right: 3rem;
+    }
+
+    .carrinho-container i{
+      margin-left: 12rem;
+    }
+
+    .icon-logo img{
+      margin: 0rem;
+    }
+
+    
+
+
   }
   
   .carrinho-container span{
