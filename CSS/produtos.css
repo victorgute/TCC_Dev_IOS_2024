@@ -554,12 +554,12 @@ footer {
 
 .icon-logo img{
     padding-top: 10px;
-  
+    margin-right: 550px;
 }
 
 
 .icon-logo{
-  padding-left: 36rem;
+  padding-left: 39rem;
   display: flex;
 }
 
@@ -762,7 +762,6 @@ footer {
     color: white;
     padding-top: 1rem;
     font-size: 2.5rem;
-    padding-left: 38rem;
   }
 
   .carrinho-container i:hover{
