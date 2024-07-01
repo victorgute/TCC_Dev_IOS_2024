@@ -551,18 +551,16 @@ footer {
     margin: 0 auto;
   }
 
-.icon-logo{
-    display: flex;
-}
 
 .icon-logo img{
     padding-top: 10px;
   
 }
 
-.search-bar {
-  margin: 20px 0;
-  text-align: center;
+
+.icon-logo{
+  padding-left: 36rem;
+  display: flex;
 }
 
 
@@ -584,26 +582,10 @@ color: #4a90e1;
 }
 
 
-/* CSS para a barra de pesquisa */
-.search-bar-container {
-    display: flex;
-    justify-content: center;
-    margin: 50px 0px;
-    padding: 10px 50px;
-  }
-  .search-bar {
-    width: 80rem;
-    padding: 10px 0px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    outline: none;
-    transition: border-color 0.3s;
-  }
+
+
   
-  .search-bar:focus {
-    border-color: #007bff;
-  }
+
   
 
 
@@ -780,7 +762,7 @@ footer {
     color: white;
     padding-top: 1rem;
     font-size: 2.5rem;
-    padding-left: 70rem;
+    padding-left: 38rem;
   }
 
   .carrinho-container i:hover{
@@ -919,10 +901,11 @@ footer {
 
 
       .carrinho-container i{
-        padding-left: 12rem;
+        padding-left: 0rem;
         padding-top: 1rem;
         margin-top: 5px;
       }
+
 
       .carrinho-container span{
         margin-top: 5px;
@@ -932,10 +915,9 @@ footer {
       .icon-logo img{
         padding-bottom: 15px;
       }
+
+
 }
-
-
-
 @media (max-width: 480px) {
     .product {
         width: 100%; 
